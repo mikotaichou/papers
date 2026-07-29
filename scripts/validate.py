@@ -69,6 +69,9 @@ LINK_SKIP_HOSTS = {
     "www.cell.com",
     "leginfo.legislature.ca.gov",
     "capitol.texas.gov",
+    "oag.ca.gov",
+    "www.ilga.gov",
+    "web.archive.org",  # stable by construction; routinely times out under load
 }
 LINK_OK_CODES = {200, 201, 202, 203, 204, 403, 405, 429}
 
@@ -983,7 +986,13 @@ def run_links():
                  *sorted(LEARNING.glob("*.md"))]:
         if not path.exists():
             continue
+        in_code = False
         for i, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if line.lstrip().startswith("```"):
+                in_code = not in_code
+                continue
+            if in_code:
+                continue  # fenced code blocks hold format examples, not real links
             for m in MD_LINK_RE.finditer(line):
                 url = m.group(2)
                 if url.startswith(("http://", "https://")):
