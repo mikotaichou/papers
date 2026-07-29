@@ -7,6 +7,7 @@
 - [DSpark: Confidence-Scheduled Speculative Decoding with Semi-Autoregressive Generation](https://arxiv.org/abs/2607.05147) (Cheng et al., 2026)
 
 ### 2026.05
+- [AI Agents May Always Fall for Prompt Injections](https://arxiv.org/abs/2605.17634) (Abdelnabi & Bagdasarian, 2026)
 - 📄 [Colorado SB 26-189: Automated Decision-Making Technology](https://leg.colorado.gov/bills/sb26-189) (Colorado, signed May 14, 2026 — repeals and replaces the 2024 Colorado AI Act)
 - [If LLMs Have Human-Like Attributes, Then So Does Age of Empires II](https://arxiv.org/abs/2605.31514) (de Wynter, 2026)
 - [Beyond Red-Teaming: Formal Guarantees of LLM Guardrail Classifiers](https://arxiv.org/abs/2605.10901) (Kezins et al., 2026)
