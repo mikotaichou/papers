@@ -1,8 +1,8 @@
-# Interpretability & Analysis
+# Interpretability & Evaluation
 
 [← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Architectures](architectures.md) | [Safety](safety.md)
 
-**Overview**: Neural networks are often treated as black boxes, but what's really happening inside? This phase dives into [interpretability](glossary.md#mechanistic-interpretability)—the science of understanding and explaining model behavior. You'll learn about mechanistic interpretability that reverse-engineers learned algorithms, activation analysis techniques like sparse autoencoders that reveal hidden structure, theoretical frameworks like the [Neural Tangent Kernel](glossary.md#neural-tangent-kernel) that explain why deep learning works, and methods for detecting when models are truthful or deceptive. As AI systems become more powerful and deployed in high-stakes settings, interpretability becomes crucial for trust, debugging, and safety.
+**Overview**: Neural networks are often treated as black boxes, but what's really happening inside? This area dives into [interpretability](glossary.md#mechanistic-interpretability)—the science of understanding and explaining model behavior. You'll learn about mechanistic interpretability that reverse-engineers learned algorithms, activation analysis techniques like sparse autoencoders that reveal hidden structure, theoretical frameworks like the [Neural Tangent Kernel](glossary.md#neural-tangent-kernel) that explain why deep learning works, and methods for detecting when models are truthful or deceptive. As AI systems become more powerful and deployed in high-stakes settings, interpretability becomes crucial for trust, debugging, and safety.
 
 ## Understanding Model Behavior
 **Goal**: Interpret what models learn and how they work

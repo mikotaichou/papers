@@ -599,4 +599,3 @@ Data points indexed in time order. Require specialized models (LSTM, MOMENT) tha
 
 [← Back to Learning Path](../learning-path.md) | [→ Browse Papers by Date](../by-date.md)
 
-*Last updated: December 2025*

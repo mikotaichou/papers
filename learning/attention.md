@@ -1,8 +1,8 @@
-# Attention Mechanism Innovations
+# Attention Mechanisms & Context
 
 [← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Language Models](language-models.md) | [Retrieval](retrieval.md)
 
-**Overview**: While [transformers](glossary.md#transformer) are powerful, their quadratic memory and compute complexity with sequence length creates significant bottlenecks. This phase explores ingenious solutions to make [attention](glossary.md#attention-mechanism) more efficient—from [FlashAttention](glossary.md#flashattention)'s IO-aware algorithms that dramatically speed up training, to architectural innovations like linear attention and state-space models that achieve sub-quadratic scaling. These advances are critical for processing long documents, reducing costs, and enabling real-time applications, representing some of the most active areas of current research.
+**Overview**: While [transformers](glossary.md#transformer) are powerful, their quadratic memory and compute complexity with sequence length creates significant bottlenecks. This area explores ingenious solutions to make [attention](glossary.md#attention-mechanism) more efficient—from [FlashAttention](glossary.md#flashattention)'s IO-aware algorithms that dramatically speed up training, to architectural innovations like linear attention and state-space models that achieve sub-quadratic scaling. These advances are critical for processing long documents, reducing costs, and enabling real-time applications, representing some of the most active areas of current research.
 
 ## Efficient Attention
 **Goal**: Understand and optimize the core attention mechanism

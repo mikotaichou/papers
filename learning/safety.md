@@ -2,7 +2,7 @@
 
 [← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Interpretability](interpretability.md) | [Reasoning](reasoning.md) | [Policy](policy.md)
 
-**Overview**: AI systems face unique challenges in both **security** and **safety** that don't exist in traditional software. This phase examines both dimensions:
+**Overview**: AI systems face unique challenges in both **security** and **safety** that don't exist in traditional software. This area examines both dimensions:
 
 **Security** focuses on protecting systems from attacks: [adversarial examples](glossary.md#adversarial-example) that fool models with imperceptible perturbations, [jailbreaking](glossary.md#jailbreaking) techniques that bypass safety guardrails, [prompt injection](glossary.md#prompt-injection) attacks that hijack model behavior, and [data poisoning](glossary.md#data-poisoning) that corrupts training.
 

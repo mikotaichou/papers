@@ -22,7 +22,9 @@ You can **follow a track** for a guided path, **jump to specific areas** based o
 - **[Foundations (Start Here)](learning/foundations.md)**
   - Deep Learning Basics
   - Word Embeddings & Representations
-  - Sequence Modeling, Generative Models, Tokenization
+  - Sequence Models
+  - Generative Models
+  - Tokenization & Subword Models
 
 - **[Large Language Models](learning/language-models.md)**
   - LLM Foundations (Transformers, BERT, GPT-3)
@@ -37,7 +39,7 @@ You can **follow a track** for a guided path, **jump to specific areas** based o
   - Retrieval-Augmented Generation (RAG)
   - Federated & Distributed Learning
 
-- **[Reasoning & Alignment](learning/reasoning.md)**
+- **[Reasoning & Agents](learning/reasoning.md)**
   - Teaching Models to Reason (RLHF, PPO, ReAct)
   - Agentic Systems
 
@@ -67,6 +69,7 @@ You can **follow a track** for a guided path, **jump to specific areas** based o
 - **[Probabilistic & Bayesian Approaches](learning/probabilistic.md)**
   - Probabilistic Programming
   - Diffusion Models
+  - Generative Models for Vision
 
 - **[Vision & Multimodal Systems](learning/vision.md)**
   - Vision Transformers (ViT, CLIP, SAM)
@@ -74,8 +77,7 @@ You can **follow a track** for a guided path, **jump to specific areas** based o
   - Vision Interpretability
 
 - **[Hardware & Systems](learning/hardware.md)**
-  - Hardware-Algorithm Co-design
-  - Specialized AI Hardware
+  - Hardware Considerations (GPU optimization, inference scaling, photonics)
 
 - **[Human-AI Interaction & Cognition](learning/human-ai-interaction.md)**
   - Trust, Reliance & Automation Bias
@@ -149,7 +151,3 @@ Prioritize [Language Models](learning/language-models.md), [Attention](learning/
 **Want to build agents?** → Focus on [Reasoning & Agents](learning/reasoning.md)
 
 **Interested in safety?** → Head to [Security, Safety & Robustness](learning/safety.md)
-
----
-
-*Last updated: July 22, 2026*

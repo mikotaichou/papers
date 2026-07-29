@@ -91,20 +91,20 @@ The learning path is organized into **14 topic areas**; use [learning-path.md](l
 
 | Area | Topic | Papers | Focus |
 |------|-------|--------|-------|
-| **[Foundations](learning/foundations.md)** | 🏗️ **Foundations** | 25 | Deep learning basics, embeddings, CNNs, RNNs, GANs, tokenization |
+| **[Foundations](learning/foundations.md)** | 🏗️ **Foundations (Start Here)** | 25 | Deep learning basics, embeddings, CNNs, RNNs, GANs, tokenization |
 | **[Language Models](learning/language-models.md)** | 🤖 **Large Language Models** | 21 | Transformers, BERT, GPT, training at scale |
-| **[Attention](learning/attention.md)** | ⚡ **Attention Innovations** | 11 | FlashAttention 1 & 2, efficient attention, long context |
-| **[Retrieval](learning/retrieval.md)** | 🔍 **Retrieval & RAG** | 11 | THE RAG paper, dense retrieval, kNN-LM, semantic search |
+| **[Attention](learning/attention.md)** | ⚡ **Attention Mechanisms & Context** | 11 | FlashAttention 1 & 2, efficient attention, long context |
+| **[Retrieval](learning/retrieval.md)** | 🔍 **Retrieval & Knowledge Systems** | 11 | THE RAG paper, dense retrieval, kNN-LM, semantic search |
 | **[Reasoning](learning/reasoning.md)** | 🧠 **Reasoning & Agents** | 22 | RLHF, chain-of-thought, agentic systems |
-| **[Architectures](learning/architectures.md)** | 🏛️ **Alternative Architectures** | 18 | RWKV, Mamba, state-space models, theory |
-| **[Interpretability](learning/interpretability.md)** | 🔬 **Interpretability** | 16 | LIME, integrated gradients, weight-sparse circuits |
+| **[Architectures](learning/architectures.md)** | 🏛️ **Novel Architectures & Theory** | 18 | RWKV, Mamba, state-space models, theory |
+| **[Interpretability](learning/interpretability.md)** | 🔬 **Interpretability & Evaluation** | 16 | LIME, integrated gradients, weight-sparse circuits |
 | **[Safety](learning/safety.md)** | 🛡️ **Security, Safety & Robustness** | 36 | Alignment, security threats, safety evaluation, bias & fairness, harmful content, long-term safety |
-| **[Advanced](learning/advanced.md)** | 🎯 **Advanced Applications** | 8 | Multimodal, scientific AI, test-time compute |
-| **[Probabilistic](learning/probabilistic.md)** | 🎲 **Probabilistic Models** | 9 | Diffusion, probabilistic programming |
-| **[Vision](learning/vision.md)** | 👁️ **Vision & Multimodal** | 11 | ViT, CLIP, SAM, LLaVA, vision-language models |
+| **[Advanced](learning/advanced.md)** | 🎯 **Advanced Topics & Applications** | 8 | Multimodal, scientific AI, test-time compute |
+| **[Probabilistic](learning/probabilistic.md)** | 🎲 **Probabilistic & Bayesian Approaches** | 9 | Diffusion, probabilistic programming |
+| **[Vision](learning/vision.md)** | 👁️ **Vision & Multimodal Systems** | 11 | ViT, CLIP, SAM, LLaVA, vision-language models |
 | **[Hardware](learning/hardware.md)** | ⚙️ **Hardware & Systems** | 5 | GPU optimization, inference scaling, photonic computing |
-| **[Human-AI Interaction](learning/human-ai-interaction.md)** | 🧠 **Human-AI Interaction** | 11 | Trust, automation bias, cognitive effects, human-AI teams |
-| **[Policy](learning/policy.md)** | 📜 **Policy & Governance** | 53 | GDPR, EU AI Act, US federal & state AI law, NIST AI RMF |
+| **[Human-AI Interaction](learning/human-ai-interaction.md)** | 🧠 **Human-AI Interaction & Cognition** | 11 | Trust, automation bias, cognitive effects, human-AI teams |
+| **[Policy](learning/policy.md)** | 📜 **Policy, Safety & Societal Impact** | 53 | GDPR, EU AI Act, US federal & state AI law, NIST AI RMF |
 
 **Total**: 254 papers across 14 areas (including 53 policy documents & frameworks)
 

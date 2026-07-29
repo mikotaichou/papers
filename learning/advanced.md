@@ -2,7 +2,7 @@
 
 [← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Safety](safety.md) | [Probabilistic](probabilistic.md)
 
-**Overview**: With strong foundations in place, this phase explores cutting-edge applications and research directions. You'll learn how models handle multiple modalities (text, images, audio) simultaneously, how [test-time compute](glossary.md#test-time-compute) scaling allows models to "think longer" for better results, how to evaluate model outputs effectively, and emerging techniques like inference scaling laws. This phase also covers practical deployment considerations and the shift from pure scaling to more efficient use of compute. These topics represent the current frontier of research and what you might encounter in production systems today.
+**Overview**: With strong foundations in place, this phase explores cutting-edge applications and research directions. You'll learn how models handle multiple modalities (text, images, audio) simultaneously, how [test-time compute](glossary.md#test-time-compute) scaling allows models to "think longer" for better results, how to evaluate model outputs effectively, and emerging techniques like inference scaling laws. This area also covers practical deployment considerations and the shift from pure scaling to more efficient use of compute. These topics represent the current frontier of research and what you might encounter in production systems today.
 
 ## Automated AI Research
 **Goal**: AI systems that can do research
