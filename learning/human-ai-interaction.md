@@ -1,6 +1,6 @@
 # Human-AI Interaction & Cognition
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Reasoning](reasoning.md) | [Safety](safety.md) | [Policy](policy.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Hardware](hardware.md) | [Next: Policy →](policy.md) | [📖 Glossary](glossary.md)
 
 **Overview**: AI systems don't just produce outputs—they reshape how humans think, decide, and act. This area examines the human side of the human-AI equation: how people calibrate trust in automated systems, when they over-rely on or reject algorithmic advice, and how sustained AI use may alter cognition itself. Building on decades of research in [automation bias](glossary.md#automation-bias), dual-process theory, and human factors, these papers are essential for anyone designing AI systems that humans actually interact with—or studying what happens when they do.
 

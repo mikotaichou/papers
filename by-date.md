@@ -1,5 +1,7 @@
 # Papers by Publication Date
 
+**Jump to year**: [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015) · [2014](#2014) · [2013](#2013) · [2012](#2012) · [2011](#2011) · [2010](#2010) · [2009](#2009) · [2004](#2004) · [1998](#1998) · [1997](#1997) · [1996](#1996)
+
 ## 2026
 
 ### 2026.07
@@ -501,6 +503,14 @@
 
 **Total Papers in Learning Path**: 254 papers
 **Paywalled Papers**: 8 (marked with 🔒)
+  - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
+  - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)
+  - 🔒 [Deep Learning (Nature Review)](https://www.nature.com/articles/nature14539)
+  - 🔒 [Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err](https://psycnet.apa.org/record/2014-48748-001)
+  - 🔒 [Trust in Automation: Designing for Appropriate Reliance](https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392)
+  - 🔒 [The Extended Mind](https://academic.oup.com/analysis/article-abstract/58/1/7/153111)
+  - 🔒 [Humans and Automation: Use, Misuse, Disuse, Abuse](https://journals.sagepub.com/doi/10.1518/001872097778543886)
+  - 🔒 [Long Short-Term Memory (LSTM)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory)
 **Open Access**: ~97%
 
 [← Back to Main](README.md) | [→ View Learning Path](learning-path.md)

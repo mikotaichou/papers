@@ -9,24 +9,22 @@ If no URL is provided, ask for one.
 ### 1. Parse the paper URL
 Extract the paper URL from the input. Support at least:
 - arXiv abstract pages: `https://arxiv.org/abs/XXXX.XXXXX`
-- arXiv PDF links (normalize to abstract when editing)
+- arXiv PDF links (normalize to the abstract URL — never use versioned `...vN.pdf` links)
 - Other direct links (conference, author page) if needed
 
 ### 2. Fetch paper metadata
 Use the URL to obtain:
 - **Title**
 - **Authors** (short form for citation, e.g. "FirstAuthor et al.")
-- **Publication date** (year and month if available; for arXiv use submission date)
+- **Publication date** (for arXiv, the submission month is authoritative: ID `YYMM.NNNNN` → `20YY.MM`)
 - **Abstract** (to decide placement)
-
-If the URL is arXiv, fetch the abstract page to get this. Derive `YYYY.MM` for the chronological index.
 
 ### 3. Discover learning areas and choose placement
 **Do not hardcode topic names.** Instead:
 
-- List all `.md` files in the `learning/` directory (e.g. with a file search or glob). Exclude `glossary.md`.
-- For each topic file, read the **Overview** (and optionally the first few section headers) to understand what that area covers.
-- Using the paper's title and abstract, choose the **single best-fit topic file** and the **best-fit section** within it (e.g. "LLM Foundations", "Training at Scale").
+- List all `.md` files in the `learning/` directory (exclude `glossary.md`).
+- For each topic file, read the **Overview** (and the section headers) to understand what that area covers.
+- Using the paper's title and abstract, choose the **single best-fit topic file** and the **best-fit section** within it.
 - Present to the user in one short block:
   - **Paper:** [title]
   - **Proposed area:** `learning/<filename>.md`
@@ -36,34 +34,46 @@ If the URL is arXiv, fetch the abstract page to get this. Derive `YYYY.MM` for t
 Ask the user to confirm or request a different area/section before making any edits.
 
 ### 4. Add to the topic file
-Once confirmed:
+Once confirmed, append a new entry with the next number in the section:
 
-- Open the chosen `learning/<topic>.md`.
-- In the chosen section, find the last numbered entry (e.g. `9. [Title](url)...`).
-- Append a new entry with the next number in the same format as existing entries:
-  - `N. [Full Paper Title](canonical_url) (Authors, Year)`
-  - `   - *Why*: One or two concise sentences on why the paper matters and what the reader learns.`
-- Use the repo style: no emoji for research papers (use emoji for policy docs only). Prefer arXiv abstract URL. Follow existing "Why" style (specific, 1-2 sentences). See `CONTRIBUTING.md` and existing entries in that file for examples.
+```markdown
+N. [Full Paper Title](https://arxiv.org/abs/XXXX.XXXXX) (Authors et al., YYYY)
+   - *Why*: One or two concise sentences on why the paper matters and what the reader learns.
+```
+
+Conventions (enforced by the validator — see CONTRIBUTING.md "Entry Format Reference"):
+- Research papers carry **no emoji**; 📄 is reserved for policy documents (policy area only)
+- Paywalled papers get a `🔒 ` prefix before the link
+- Continuation bullets align under the title (3 spaces for 1-digit entry numbers, 4 for 2-digit)
+- Prefer the arXiv abstract URL; follow the existing "Why" style (specific, 1–2 sentences)
 
 ### 5. Add to chronological index
 Edit `by-date.md`:
 
-- Ensure there is a `## YYYY` heading for the paper's year if needed.
-- Ensure there is a `### YYYY.MM` heading for the paper's month (e.g. `### 2026.02`).
-- Insert a new bullet at the top of that month's list: `- [Full Paper Title](canonical_url) (Authors, Year)`.
-- Keep months in reverse chronological order (newest first). Create a new year section at the top of the file if the paper is from a future year.
+- Ensure `## YYYY` and `### YYYY.MM` headings exist for the paper's date (reverse chronological, newest first).
+- Insert a new bullet at the top of that month's list, **including the area back-link**:
 
-### 6. Branch, commit, PR, and merge
+```markdown
+- [Full Paper Title](https://arxiv.org/abs/XXXX.XXXXX) (Authors et al., YYYY) — [Area](learning/<area>.md)
+```
+
+- Policy documents also get a `📄 ` prefix; paywalled papers get `🔒 ` and the ` - *Paywalled*` suffix.
+
+### 6. Validate
+Run the repo validator — it updates every derived artifact (README badges, per-area table counts, totals, the generated Coverage-by-Topic block, and the by-date footer stats + paywalled list). **Never hand-edit counts.**
+
+```bash
+python3 scripts/validate.py --fix
+python3 scripts/validate.py   # must report 0 errors before committing
+```
+
+Fix any remaining ERROR lines (each ends with a fix hint) before proceeding.
+
+### 7. Branch, commit, PR, and merge
 Do not commit directly to `main`. Instead:
 
 1. Create a new branch from `main` named `add-<short-kebab-title>` (e.g. `add-agents-of-chaos`).
-2. Commit the two changed files with a clear message, e.g. `Add paper: Title (YYYY)`.
+2. Commit the changed files (typically the topic file, `by-date.md`, and `README.md` from the count updates) with a clear message, e.g. `Add paper: Title (YYYY)`. The pre-commit hook re-runs the validator; a blocked commit means step 6 was skipped.
 3. Push the branch and create a pull request into `main` using `gh pr create`.
-4. Merge the PR using `gh pr merge --merge --delete-branch` (this deletes the remote branch).
-5. Switch back to `main`, pull to sync, and delete the local branch with `git branch -d <branch-name>`.
-
-## Conventions (from CONTRIBUTING.md)
-- Use `###` for paper titles only where CONTRIBUTING specifies; in topic files use numbered list entries.
-- Links: prefer arXiv abstract; then PDF; then proceedings.
-- "Why": 1-2 sentences, specific and contextual.
-- Emoji: policy docs only in topic files; research papers have no emoji there.
+4. Merge the PR using `gh pr merge --merge --delete-branch`.
+5. Switch back to `main`, pull to sync, and delete the local branch if it remains.

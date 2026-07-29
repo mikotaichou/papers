@@ -1,6 +1,6 @@
 # Vision & Multimodal Systems
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Probabilistic](probabilistic.md) | [Hardware](hardware.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Probabilistic](probabilistic.md) | [Next: Hardware →](hardware.md) | [📖 Glossary](glossary.md)
 
 **Overview**: The transformer revolution didn't stop at text—it transformed computer vision too. This area explores how [attention mechanisms](glossary.md#attention-mechanism) replaced [convolutional neural networks](glossary.md#cnn-convolutional-neural-network) as the dominant paradigm in vision, how [CLIP](glossary.md#clip-contrastive-language-image-pre-training) bridges vision and language through contrastive learning, and how models like [SAM](glossary.md#sam-segment-anything-model) achieve unprecedented zero-shot image segmentation. You'll see how the same principles that power ChatGPT enable models to understand and generate images, paving the way for truly [multimodal](glossary.md#multimodal-learning) AI systems that can seamlessly work with text, images, and video together.
 

@@ -75,10 +75,12 @@ LINK_OK_CODES = {200, 201, 202, 203, 204, 403, 405, 429}
 ARXIV_RE = re.compile(
     r"^https?://arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})(?:v\d+)?(?:\.pdf)?/?$"
 )
-ENTRY_RE = re.compile(r"^(\d+)\.\s+((?:📄|🔒)\s+)?\[(.+?)\]\((\S+?)\)(.*)$")
-BULLET_RE = re.compile(r"^- ((?:📄|🔒)\s+)?\[(.+?)\]\((\S+?)\)(.*)$")
+# URL pattern tolerating one level of balanced parens (e.g. .../S1364-6613(16)30098-5)
+URL_PAT = r"(?:[^()\s]|\([^()\s]*\))+"
+ENTRY_RE = re.compile(rf"^(\d+)\.\s+((?:📄|🔒)\s+)?\[(.+?)\]\(({URL_PAT})\)(.*)$")
+BULLET_RE = re.compile(rf"^- ((?:📄|🔒)\s+)?\[(.+?)\]\(({URL_PAT})\)(.*)$")
 AREA_LINK_RE = re.compile(r"\s+—\s+\[([^\]]+)\]\((learning/[a-z-]+\.md)\)\s*$")
-MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
+MD_LINK_RE = re.compile(rf"\[([^\]]*)\]\(({URL_PAT})\)")
 
 
 class Finding:
@@ -620,6 +622,19 @@ def check_counts(repo):
         if key not in f:
             repo.error("by-date.md", 1, "count",
                        f"footer stat '{key}' not found -> restore the footer pattern")
+    if "paywalled" in f:
+        listed = set()
+        lines = repo.bydate["lines"]
+        for line in lines[f["paywalled"][0]:]:
+            if not line.startswith("  - 🔒"):
+                break
+            m = MD_LINK_RE.search(line)
+            if m:
+                listed.add(canon(m.group(2)))
+        actual = {canon(b["url"]) for b in repo.bydate["bullets"] if b["emoji"] == "🔒"}
+        if listed != actual:
+            repo.error("by-date.md", f["paywalled"][0], "count",
+                       "footer paywalled list does not match the 🔒 bullets -> run --fix")
 
 
 def generate_coverage(repo):
@@ -913,14 +928,25 @@ def fix_counts(repo):
 
     lines = BYDATE.read_text(encoding="utf-8").splitlines()
     open_pct = round(100 * (1 - c["bydate_paywalled"] / c["bydate_total"])) if c["bydate_total"] else 100
-    for i, line in enumerate(lines):
+    paylist = [f'  - 🔒 [{b["title"]}]({b["url"]})'
+               for b in repo.bydate["bullets"] if b["emoji"] == "🔒"]
+    out = []
+    skip_paylist = False
+    for line in lines:
+        if skip_paylist and line.startswith("  - 🔒"):
+            continue
+        skip_paylist = False
         if line.startswith("**Total Papers in Learning Path**:"):
-            lines[i] = f'**Total Papers in Learning Path**: {c["bydate_total"]} papers'
+            out.append(f'**Total Papers in Learning Path**: {c["bydate_total"]} papers')
         elif line.startswith("**Paywalled Papers**:"):
-            lines[i] = f'**Paywalled Papers**: {c["bydate_paywalled"]} (marked with 🔒)'
+            out.append(f'**Paywalled Papers**: {c["bydate_paywalled"]} (marked with 🔒)')
+            out.extend(paylist)
+            skip_paylist = True
         elif line.startswith("**Open Access**:"):
-            lines[i] = f"**Open Access**: ~{open_pct}%"
-    BYDATE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+            out.append(f"**Open Access**: ~{open_pct}%")
+        else:
+            out.append(line)
+    BYDATE.write_text("\n".join(out) + "\n", encoding="utf-8")
 
 
 def fix_coverage(repo):

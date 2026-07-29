@@ -1,6 +1,6 @@
 # Large Language Models
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Foundations](foundations.md) | [Attention](attention.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Foundations](foundations.md) | [Next: Attention →](attention.md) | [📖 Glossary](glossary.md)
 
 **Overview**: This area traces the explosive evolution of language models from [BERT](glossary.md#bert-bidirectional-encoder-representations-from-transformers)'s bidirectional pretraining breakthrough to [GPT](glossary.md#gpt-generative-pre-trained-transformer)-3's massive scale demonstration. You'll learn how the field discovered that [pre-training](glossary.md#pre-training) on vast amounts of text data creates models with remarkable [few-shot learning](glossary.md#few-shot-learning) abilities, and how different pretraining objectives (masked language modeling vs. autoregressive) lead to different capabilities. This progression from BERT to GPT-3 to instruction-tuned models forms the backbone of modern NLP and sets the stage for understanding today's ChatGPT-style systems.
 

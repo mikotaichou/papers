@@ -1,6 +1,6 @@
 # Policy, Safety & Societal Impact
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Hardware](hardware.md) | [Safety](safety.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Human-AI Interaction](human-ai-interaction.md) | [📖 Glossary](glossary.md)
 
 **Overview**: Technical capabilities alone don't determine AI's impact on society—policy, governance, and ethical considerations are equally critical. This area steps back to examine the bigger picture: how should AI systems be regulated, what are the existential and near-term risks, how do we ensure equitable access and prevent misuse, and what frameworks exist for responsible AI development? Whether you're building AI systems, advising organizations, or simply want to be an informed citizen, understanding these policy and safety considerations is essential as AI becomes increasingly central to society.
 
@@ -446,4 +446,4 @@ State AI law moves faster than any curated list can. Use these for current statu
 
 ---
 
-[← Back to Learning Path](../learning-path.md)
+**Related**: [Hardware](hardware.md) | [Safety](safety.md) | [Human-AI Interaction](human-ai-interaction.md)

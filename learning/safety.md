@@ -1,6 +1,6 @@
 # Security, Safety & Robustness
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Interpretability](interpretability.md) | [Reasoning](reasoning.md) | [Policy](policy.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Interpretability](interpretability.md) | [Next: Advanced →](advanced.md) | [📖 Glossary](glossary.md)
 
 **Overview**: AI systems face unique challenges in both **security** and **safety** that don't exist in traditional software. This area examines both dimensions:
 
@@ -147,4 +147,4 @@ As AI systems control increasingly important decisions—from content moderation
 
 ---
 
-**Related**: [Interpretability](interpretability.md) | [Advanced](advanced.md) | [Policy](policy.md)
+**Related**: [Interpretability](interpretability.md) | [Advanced](advanced.md) | [Policy](policy.md) | [Human-AI Interaction](human-ai-interaction.md)

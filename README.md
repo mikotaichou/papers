@@ -6,6 +6,8 @@
 [![Learning Path](https://img.shields.io/badge/learning-14_areas-green.svg)](learning-path.md)
 [![Glossary](https://img.shields.io/badge/glossary-161_terms-purple.svg)](learning/glossary.md)
 
+**Jump to**: [What's Inside](#-whats-inside) · [Quick Start](#-quick-start) · [Learning Path Overview](#-learning-path-overview) · [Coverage by Topic](#-coverage-by-topic) · [Contributing](#-contributing) · [Resources](#-additional-resources) · [License](#-license)
+
 ---
 
 ## 🎯 What's Inside
@@ -122,7 +124,7 @@ This collection spans the full spectrum of modern AI/ML research, organized by a
 
 ### 🧠 Human-AI Interaction
 - **Trust, Reliance & Automation Bias**: [Thinking, Fast and Slow](https://us.macmillan.com/books/9780374533557/thinkingfastandslow) · [Humans and Automation: Use, Misuse, Disuse, Abuse](https://journals.sagepub.com/doi/10.1518/001872097778543886) · [Trust in Automation: Designing for Appropriate Reliance](https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392) · [Algorithm Aversion: People Erroneously Avoid Algorithms After Seeing Them Err](https://psycnet.apa.org/record/2014-48748-001)
-- **Cognitive Effects of AI**: [The Extended Mind](https://academic.oup.com/analysis/article-abstract/58/1/7/153111) · [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16) · [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872) · [Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646)
+- **Cognitive Effects of AI**: [The Extended Mind](https://academic.oup.com/analysis/article-abstract/58/1/7/153111) · [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5) · [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872) · [Thinking—Fast, Slow, and Artificial: How AI is Reshaping Human Reasoning and the Rise of Cognitive Surrender](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6097646)
 - **Human-AI Decision-Making**: [The Principles and Limits of Algorithm-in-the-Loop Decision Making](https://dl.acm.org/doi/10.1145/3359152) · [Does the Whole Exceed its Parts? The Effect of AI Explanations on Complementary Team Performance](https://arxiv.org/abs/2006.14779) · [To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-Assisted Decision-Making](https://arxiv.org/abs/2102.09692)
 
 ### 📜 Policy & Governance

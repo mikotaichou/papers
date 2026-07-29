@@ -1,6 +1,6 @@
 # Novel Architectures & Theory
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Reasoning](reasoning.md) | [Interpretability](interpretability.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Reasoning](reasoning.md) | [Next: Interpretability →](interpretability.md) | [📖 Glossary](glossary.md)
 
 **Overview**: [Transformers](glossary.md#transformer) dominate modern AI, but are they the final answer? This area explores alternative architectures that challenge the transformer's supremacy: [state-space models](glossary.md#state-space-model) like [Mamba](glossary.md#mamba) that achieve linear-time inference, [retention networks](glossary.md#retnet-retentive-network) that blend RNN and transformer properties, [RWKV](glossary.md#rwkv)'s parallelizable RNN approach, and hybrid architectures that combine different mechanisms. Each offers different trade-offs between performance, efficiency, and scaling properties. Understanding these alternatives gives you insight into the fundamental principles that make architectures work—and hints at what might come next.
 

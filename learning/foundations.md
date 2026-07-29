@@ -1,6 +1,6 @@
 # Foundations (Start Here)
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Language Models](language-models.md)
+[← Back to Learning Path](../learning-path.md) | [Next: Language Models →](language-models.md) | [📖 Glossary](glossary.md)
 
 **Overview**: This area establishes the essential groundwork for understanding modern AI systems. You'll explore the fundamental principles of [deep learning](glossary.md#deep-learning), from basic neural network architectures to the revolutionary [transformer](glossary.md#transformer) model that underpins nearly all current LLMs. By mastering these foundational concepts—including training dynamics, [attention mechanisms](glossary.md#attention-mechanism), and the shift from convolutional to attention-based architectures—you'll build the technical vocabulary and intuition needed for everything that follows. Think of this as learning the alphabet before reading literature.
 
