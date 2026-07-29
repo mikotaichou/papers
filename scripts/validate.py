@@ -385,6 +385,8 @@ def check_anchors(repo):
                     continue  # external URLs and GitHub-web links (issues/new?template=...)
                 base, _, frag = target.partition("#")
                 resolved = (path.parent / base).resolve() if base else path
+                if base and not resolved.is_relative_to(ROOT):
+                    continue  # ../../issues etc. — GitHub web routes, not files
                 if base and not resolved.exists():
                     repo.warn(
                         rel(path), i, "rel-link",
@@ -518,11 +520,11 @@ def check_attribution(repo):
                 f'"{b["title"][:50]}" missing "(Authors, Year)" suffix -> add it',
             )
         else:
-            m = re.search(r"\((?:[^)]*?,\s*)?(\d{4})(?:/\d{4})?\)", rest)
-            if m and b["year"] and abs(int(m.group(1)) - b["year"]) > 1:
+            years = [int(y) for y in re.findall(r"\b(\d{4})\b", rest)]
+            if years and b["year"] and not any(abs(y - b["year"]) <= 1 for y in years):
                 repo.warn(
                     "by-date.md", b["line"], "year-sanity",
-                    f'attribution year {m.group(1)} but listed under ## {b["year"]} '
+                    f'attribution years {years} but listed under ## {b["year"]} '
                     "-> check the entry is in the right section",
                 )
         # arXiv IDs encode YYMM: catch entries filed under the wrong month
@@ -692,18 +694,27 @@ def fix_missing_bydate(repo):
         if cu in bydate_urls:
             continue
         bydate_urls.add(cu)
-        years = re.findall(r"(\d{4})", e["rest"])
-        if not years:
-            continue  # no parseable year: left for the cross-index error
+        month = None
+        if cu.startswith("arxiv:"):
+            year, month = int(cu[6:8]) + 2000, int(cu[8:10])
+        else:
+            years = re.findall(r"(\d{4})", e["rest"])
+            if not years:
+                continue  # no parseable year: left for the cross-index error
+            year = int(years[-1])
         emoji = f'{e["emoji"]} ' if e["emoji"] else ""
         suffix = " - *Paywalled*" if e["emoji"] == "🔒" else ""
         attr = e["rest"].strip()
         bullet = f'- {emoji}[{e["title"]}]({e["url"]}) {attr}{suffix}'.rstrip()
-        missing.append((int(years[-1]), bullet))
+        missing.append((year, month, bullet))
     if not missing:
         return
     lines = BYDATE.read_text(encoding="utf-8").splitlines()
-    for year, bullet in missing:
+    for year, month, bullet in missing:
+        if month is not None:
+            # arXiv entry: place in (or create) its exact YYYY.MM block
+            lines = _insert_into_month(lines, year, month, bullet)
+            continue
         if not any(re.match(rf"^## {year}$", l) for l in lines):
             # create the year section in descending position
             for i, line in enumerate(lines):
@@ -717,20 +728,45 @@ def fix_missing_bydate(repo):
                             if lines[i].strip() == "---"), len(lines))
                 lines[end:end] = [f"## {year}", "", bullet, ""]
             continue
-        year_idx = None
+        # month unknown: loose bullet directly under the year heading,
+        # before any month block ("this year, month unspecified")
         for i, line in enumerate(lines):
             if re.match(rf"^## {year}$", line):
-                year_idx = i
-            elif year_idx is not None and (line.startswith("## ") or line.strip() == "---"):
+                j = i + 1
+                while j < len(lines) and lines[j].strip() == "":
+                    j += 1
+                lines.insert(j if lines[j].startswith("- ") else i + 1, bullet)
+                if not lines[i + 1].strip() == "":
+                    lines.insert(i + 1, "")
+                break
+    BYDATE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _insert_into_month(lines, year, month, bullet):
+    """Insert bullet into the ### YYYY.MM block, creating it in order if needed."""
+    head = f"### {year}.{month:02d}"
+    if head in lines:
+        idx = lines.index(head)
+        lines.insert(idx + 1, bullet)
+        return lines
+    year_idx = None
+    for i, line in enumerate(lines):
+        if re.match(rf"^## {year}$", line):
+            year_idx = i
+        elif year_idx is not None:
+            m = re.match(r"^### (\d{4})\.(\d{2})$", line)
+            if m and (int(m.group(1)), int(m.group(2))) < (year, month):
+                lines[i:i] = [head, bullet, ""]
+                return lines
+            if line.startswith("## ") or line.strip() == "---":
                 insert_at = i
                 while insert_at > year_idx and lines[insert_at - 1].strip() == "":
                     insert_at -= 1
-                lines.insert(insert_at, bullet)
-                break
-        else:
-            if year_idx is not None:  # year is the last section
-                lines.append(bullet)
-    BYDATE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+                lines[insert_at:insert_at] = ["", head, bullet]
+                return lines
+    if year_idx is not None:
+        lines.extend(["", head, bullet])
+    return lines
 
 
 def fix_order():
@@ -819,6 +855,31 @@ def fix_backlinks(repo):
         idx = b["line"] - 1
         lines[idx] = f"{lines[idx].rstrip()} — [{label}](learning/{stem}.md)"
         changed = True
+    if changed:
+        BYDATE.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def fix_attributions(repo):
+    """Copy '(Authors, Year)' from the topic-file entry to by-date bullets lacking it."""
+    topic_urls = repo.topic_urls()
+    lines = BYDATE.read_text(encoding="utf-8").splitlines()
+    changed = False
+    for b in repo.bydate["bullets"]:
+        rest = b["rest"].replace("- *Paywalled*", "")
+        if re.search(r"\([^)]*\d{4}[^)]*\)", rest):
+            continue
+        owners = topic_urls.get(canon(b["url"]))
+        if not owners:
+            continue
+        m = re.search(r"\(([^)]*\d{4}[^)]*)\)\s*$", owners[0][1]["rest"].strip())
+        if not m:
+            continue
+        idx = b["line"] - 1
+        new = re.sub(r"^(- (?:📄 |🔒 )?\[.*?\]\(\S+?\))",
+                     lambda mm: f"{mm.group(1)} ({m.group(1)})", lines[idx], count=1)
+        if new != lines[idx]:
+            lines[idx] = new
+            changed = True
     if changed:
         BYDATE.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -993,6 +1054,8 @@ def run_fix():
     fix_order()
     repo = Repo()
     fix_backlinks(repo)
+    repo = Repo()
+    fix_attributions(repo)
     repo = Repo()
     fix_counts(repo)
     repo = Repo()
