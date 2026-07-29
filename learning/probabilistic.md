@@ -1,8 +1,8 @@
 # Probabilistic & Bayesian Approaches
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Advanced](advanced.md) | [Vision](vision.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Advanced](advanced.md) | [Next: Vision →](vision.md) | [📖 Glossary](glossary.md)
 
-**Overview**: Beyond language models lies a rich world of probabilistic generative models. This phase covers [diffusion models](glossary.md#diffusion-model)—the technology behind Stable Diffusion and DALL-E—which generate high-quality images by gradually denoising random noise. You'll understand the theoretical foundations connecting diffusion to score matching and stochastic differential equations, and how these models have revolutionized image generation, video synthesis, and even molecular design. While briefer than other phases, these concepts are essential for understanding modern generative AI beyond just text.
+**Overview**: Beyond language models lies a rich world of probabilistic modeling. The core of this area is **probabilistic programming**—expressing generative models as programs and performing Bayesian inference over them—spanning probabilistic data analysis, program synthesis for time series, and scene perception. It is rounded out by the theory of why [diffusion models](glossary.md#diffusion-model) generalize rather than memorize, and Bayesian generative approaches to vision such as MCMC methods and generative graphics programs. While briefer than other areas, these concepts are essential for understanding uncertainty, inference, and generative modeling beyond just text.
 
 ## Probabilistic Programming
 **Goal**: Build probabilistic models programmatically

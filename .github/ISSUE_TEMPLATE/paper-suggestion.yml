@@ -50,19 +50,20 @@ body:
       label: Suggested Area
       description: Which topic area does this paper best fit into?
       options:
-        - "Foundations"
-        - "Language Models"
-        - "Attention & Context"
-        - "Retrieval & RAG"
+        - "Foundations (Start Here)"
+        - "Large Language Models"
+        - "Attention Mechanisms & Context"
+        - "Retrieval & Knowledge Systems"
         - "Reasoning & Agents"
-        - "Architectures"
-        - "Interpretability"
-        - "Safety"
-        - "Advanced Topics"
-        - "Probabilistic Models"
-        - "Vision & Multimodal"
+        - "Novel Architectures & Theory"
+        - "Interpretability & Evaluation"
+        - "Security, Safety & Robustness"
+        - "Advanced Topics & Applications"
+        - "Probabilistic & Bayesian Approaches"
+        - "Vision & Multimodal Systems"
         - "Hardware & Systems"
-        - "Policy & Governance"
+        - "Human-AI Interaction & Cognition"
+        - "Policy, Safety & Societal Impact"
         - "Not sure / Multiple areas"
     validations:
       required: true

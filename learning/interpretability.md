@@ -1,8 +1,8 @@
-# Interpretability & Analysis
+# Interpretability & Evaluation
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Architectures](architectures.md) | [Safety](safety.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Architectures](architectures.md) | [Next: Safety →](safety.md) | [📖 Glossary](glossary.md)
 
-**Overview**: Neural networks are often treated as black boxes, but what's really happening inside? This phase dives into [interpretability](glossary.md#mechanistic-interpretability)—the science of understanding and explaining model behavior. You'll learn about mechanistic interpretability that reverse-engineers learned algorithms, activation analysis techniques like sparse autoencoders that reveal hidden structure, theoretical frameworks like the [Neural Tangent Kernel](glossary.md#neural-tangent-kernel) that explain why deep learning works, and methods for detecting when models are truthful or deceptive. As AI systems become more powerful and deployed in high-stakes settings, interpretability becomes crucial for trust, debugging, and safety.
+**Overview**: Neural networks are often treated as black boxes, but what's really happening inside? This area dives into [interpretability](glossary.md#mechanistic-interpretability)—the science of understanding and explaining model behavior. You'll learn about mechanistic interpretability that reverse-engineers learned algorithms, activation analysis techniques like sparse autoencoders that reveal hidden structure, theoretical frameworks like the [Neural Tangent Kernel](glossary.md#neural-tangent-kernel) that explain why deep learning works, and methods for detecting when models are truthful or deceptive. As AI systems become more powerful and deployed in high-stakes settings, interpretability becomes crucial for trust, debugging, and safety.
 
 ## Understanding Model Behavior
 **Goal**: Interpret what models learn and how they work
@@ -35,10 +35,10 @@
    - *Why*: **Training models for interpretability from scratch** - constrains most weights to zero so neurons have few connections; produces circuits with unprecedented human understandability through weight sparsity rather than post-hoc analysis; validates circuits with mean ablation showing they are necessary and sufficient for task performance
 
 10. [H-Neurons: On the Existence, Impact, and Origin of Hallucination-Associated Neurons in LLMs](https://arxiv.org/abs/2512.01797) (Gao et al., Tsinghua, 2025)
-   - *Why*: **Neuron-level mechanistic view of hallucinations** - identifies a sparse subset (<0.1%) of feedforward neurons ([H-Neurons](glossary.md#h-neurons-hallucination-associated-neurons)) that reliably predict hallucination; shows they drive over-compliance behaviors (invalid premises, misleading context, sycophancy, harmful instructions) and originate in pre-training; bridges macro-behavioral patterns with micro-neural mechanisms for detection and intervention
+    - *Why*: **Neuron-level mechanistic view of hallucinations** - identifies a sparse subset (<0.1%) of feedforward neurons ([H-Neurons](glossary.md#h-neurons-hallucination-associated-neurons)) that reliably predict hallucination; shows they drive over-compliance behaviors (invalid premises, misleading context, sycophancy, harmful instructions) and originate in pre-training; bridges macro-behavioral patterns with micro-neural mechanisms for detection and intervention
 
 11. [Farther the Shift, Sparser the Representation: Analyzing OOD Mechanisms in LLMs](https://arxiv.org/abs/2603.03415) (Jin et al., 2026)
-   - *Why*: **Sparsity as an adaptive OOD mechanism** - reveals that LLM last hidden states become substantially sparser as input difficulty increases (harder reasoning, longer contexts, more answer choices); demonstrates this is not incidental but an adaptive strategy for stabilizing reasoning under distribution shift; leverages the insight to design Sparsity-Guided Curriculum In-Context Learning (SG-ICL) for improved few-shot performance
+    - *Why*: **Sparsity as an adaptive OOD mechanism** - reveals that LLM last hidden states become substantially sparser as input difficulty increases (harder reasoning, longer contexts, more answer choices); demonstrates this is not incidental but an adaptive strategy for stabilizing reasoning under distribution shift; leverages the insight to design Sparsity-Guided Curriculum In-Context Learning (SG-ICL) for improved few-shot performance
 
 ## Model Evaluation & Robustness
 **Goal**: Properly evaluate and benchmark models
@@ -60,4 +60,4 @@
 
 ---
 
-**Related**: [Architectures](architectures.md) | [Safety](safety.md) | [Language Models](language-models.md)
+**Related**: [Architectures](architectures.md) | [Safety](safety.md) | [Language Models](language-models.md) | [Human-AI Interaction](human-ai-interaction.md)
