@@ -55,6 +55,9 @@ As AI systems control increasingly important decisions—from content moderation
 8. [Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems](https://arxiv.org/abs/2607.14611) (Gadgil et al., 2026)
    - *Why*: Shows that persistent memory files change the prompt injection threat model - payloads planted in an agent's memory attack current and future sessions, even though getting an agent to overwrite its own memory from untrusted content is hard; evaluates two coding agents across four models and measures how attack success and payload persistence vary by system, adversarial goal, and multi-session sequence
 
+9. [AI Agents May Always Fall for Prompt Injections](https://arxiv.org/abs/2605.17634) (Abdelnabi & Bagdasarian, 2026)
+   - *Why*: Reframes prompt injection through Contextual Integrity theory and argues an "impossibility result": adversaries can always craft contexts that make blocked flows look legitimate, while tightening norms blocks legitimate flows; shows data/instruction separation defenses miss contextual manipulation attacks
+
 ## Safety Evaluation & Red Teaming
 **Goal**: Systematically evaluate AI systems for safety risks and harmful behaviors
 
