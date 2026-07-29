@@ -17,6 +17,8 @@ A comprehensive glossary of terms, concepts, and acronyms used throughout the le
 - [Security & Safety](#security--safety)
 - [Systems & Hardware](#systems--hardware)
 - [Applications & Domains](#applications--domains)
+- [Acronyms Quick Reference](#acronyms-quick-reference)
+- [Cross-References](#cross-references)
 
 ---
 
@@ -200,6 +202,9 @@ A framework for training massive language models using model parallelism and dis
 
 ### Model Parallelism
 Splitting a model across multiple devices when it's too large to fit on one. Contrasts with data parallelism where the model is replicated.
+
+### Neural Tangent Kernel
+A kernel that describes how an infinitely wide neural network's predictions evolve during gradient descent training. Connects deep learning to kernel methods and explains convergence and generalization behavior of very wide networks in theory.
 
 ### Pre-training
 Initial training phase on large, general datasets before fine-tuning on specific tasks. Foundation of transfer learning.
@@ -492,6 +497,9 @@ An AI system that can take actions in an environment to achieve goals. Modern LL
 ### Agentic System
 A framework where AI agents autonomously plan, execute tasks, and potentially collaborate with other agents to achieve objectives.
 
+### Automation Bias
+The human tendency to over-rely on automated systems and accept their outputs uncritically, even when contradictory evidence is available. A central concern in human-AI interaction: it drives both misuse (following wrong AI advice) and complements automation-induced complacency in monitoring tasks.
+
 ### Chain-of-Thought Prompting
 Encouraging models to show step-by-step reasoning in their outputs, improving performance on complex reasoning tasks.
 
@@ -562,6 +570,8 @@ Data points indexed in time order. Require specialized models (LSTM, MOMENT) tha
 | RL | Reinforcement Learning | Training |
 | RLAIF | Reinforcement Learning from AI Feedback | Training |
 | RLHF | Reinforcement Learning from Human Feedback | Training |
+| DPR | Dense Passage Retrieval | Retrieval |
+| LLaVA | Large Language and Vision Assistant | Models |
 | RNN | Recurrent Neural Network | Architectures |
 | RWKV | Named after its components (receptance, weight, key, value) | Architectures |
 | SAM | Segment Anything Model | Models |
@@ -569,11 +579,9 @@ Data points indexed in time order. Require specialized models (LSTM, MOMENT) tha
 | SGD | Stochastic Gradient Descent | Optimization |
 | TPU | Tensor Processing Unit | Hardware |
 | ViT | Vision Transformer | Models |
+| VLM | Vision-Language Model | Models |
 | VLSI | Very Large Scale Integration | Hardware |
 | ZeRO | Zero Redundancy Optimizer | Training |
-| DPR | Dense Passage Retrieval | Retrieval |
-| VLM | Vision-Language Model | Models |
-| LLaVA | Large Language and Vision Assistant | Models |
 
 ---
 

@@ -7,7 +7,7 @@
 ## Vision Transformers
 
 1. [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Vision Transformer/ViT)](https://arxiv.org/abs/2010.11929) (Dosovitskiy et al., 2021)
-   - *Why*: **Missing but crucial** - applies pure transformers to vision; connects vision and language model architectures
+   - *Why*: **The Vision Transformer paper** - applies pure transformers to image recognition by treating patches as tokens; connects vision and language model architectures and underpins modern multimodal models
 
 2. [Learning Transferable Visual Models From Natural Language Supervision (CLIP)](https://arxiv.org/abs/2103.00020) (Radford et al., 2021)
    - *Why*: **The bridge to multimodal AI** - learns vision-language alignment from 400M image-text pairs; enables zero-shot transfer

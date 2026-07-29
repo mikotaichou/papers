@@ -17,7 +17,8 @@
    - *Why*: Photonic computing for AI; next-generation hardware
    - *Note*: Paywalled - Nature Photonics journal
 
-4. [A Log-Domain Implementation of the Diffusion Network in Very Large Scale Integration](https://papers.nips.cc/paper_files/paper/2010/file/7bcdf75ad237b8e02e301f4091fb6bc8-Paper.pdf) (2010)
+4. [A Log-Domain Implementation of the Diffusion Network in Very Large Scale Integration](https://papers.nips.cc/paper_files/paper/2010/file/7bcdf75ad237b8e02e301f4091fb6bc8-Paper.pdf) (Chen & Murray, 2010)
+   - *Why*: Early analog VLSI implementation of a stochastic neural model - shows how probabilistic networks can be realized directly in silicon using log-domain circuits; a precursor to today's interest in energy-efficient, hardware-native neural computation
 
 5. [cuGenOpt: A GPU-Accelerated General-Purpose Metaheuristic Framework for Combinatorial Optimization](https://arxiv.org/abs/2603.19163) (Liu, 2026)
    - *Why*: Demonstrates a "one block evolves one solution" CUDA architecture with hardware-aware resource management across GPU generations (T4, V100, A800), outperforming general MIP solvers by orders of magnitude on combinatorial optimization problems.

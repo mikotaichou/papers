@@ -34,10 +34,7 @@
 1. [Consciousness in Artificial Intelligence: Insights from the Science of Consciousness](https://arxiv.org/pdf/2308.08708v3.pdf) (2024)
    - *Why*: **Neuroscience-grounded AI consciousness evaluation** - surveys leading theories of consciousness (Global Workspace, Higher-Order, Recurrent Processing) and maps their indicator properties to current AI architectures; provides a concrete rubric for assessing which computational properties associated with consciousness exist in modern systems; interdisciplinary collaboration between neuroscientists and AI researchers
 
-2. [Mixture-of-Transformers: A Sparse and Scalable Architecture for Multi-Modal Foundation Models](https://arxiv.org/pdf/2411.04996) (2024)
-   - *Why*: **Sparse multimodal architecture** - decouples feedforward layers, attention matrices, and layer norms into modality-specific experts while sharing self-attention across modalities; achieves equivalent multimodal performance with substantially fewer FLOPs than dense models; demonstrates that modality-specific sparsity is more efficient than uniform scaling for vision-language tasks
-
-3. [If LLMs Have Human-Like Attributes, Then So Does Age of Empires II](https://arxiv.org/abs/2605.31514) (de Wynter, 2026)
+2. [If LLMs Have Human-Like Attributes, Then So Does Age of Empires II](https://arxiv.org/abs/2605.31514) (de Wynter, 2026)
    - *Why*: **Anthropomorphism as a substrate-dependent claim** - argues that attributing human-like traits like morality or language comprehension to LLMs is ill-posed by training a neural network on Age of Empires II and showing the same "human-like" properties emerge in an unrelated system, so they are not uniquely identifying; contends that without explicit measurement criteria such claims become circular or substrate-dependent, and introduces a "null assumption" of LLM non-uniqueness (demonstrating AoE II is Turing-complete along the way)
 
 ---

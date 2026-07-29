@@ -435,10 +435,12 @@ def check_entry_format(repo):
                 indent = len(f"{e['num']}. ")
                 for line_no, cont in e["cont"]:
                     actual = len(cont) - len(cont.lstrip())
-                    if actual != indent:
+                    # deeper indents are legitimate nested lists; only
+                    # under-indentation breaks GitHub's list nesting
+                    if actual < indent:
                         repo.error(
                             file, line_no, "entry-format",
-                            f"continuation bullet indented {actual} spaces, expected {indent} "
+                            f"continuation bullet indented {actual} spaces, needs at least {indent} "
                             "(aligns under the title) -> re-indent",
                         )
                 has_why = any("*Why*" in cont for _, cont in e["cont"])
@@ -522,6 +524,17 @@ def check_attribution(repo):
                     "by-date.md", b["line"], "year-sanity",
                     f'attribution year {m.group(1)} but listed under ## {b["year"]} '
                     "-> check the entry is in the right section",
+                )
+        # arXiv IDs encode YYMM: catch entries filed under the wrong month
+        cu = canon(b["url"])
+        if cu.startswith("arxiv:") and b["year"]:
+            yy, mm = int(cu[6:8]) + 2000, int(cu[8:10])
+            if (yy, mm) != (b["year"], b["month"] or mm):
+                repo.warn(
+                    "by-date.md", b["line"], "arxiv-date",
+                    f"arXiv ID dates this {yy}.{mm:02d} but it is filed under "
+                    f'{b["year"]}{"." + format(b["month"], "02d") if b["month"] else ""} '
+                    "-> move it (arXiv submission month is authoritative)",
                 )
 
 
@@ -691,7 +704,19 @@ def fix_missing_bydate(repo):
         return
     lines = BYDATE.read_text(encoding="utf-8").splitlines()
     for year, bullet in missing:
-        # find the year section; insert at its end (unknown month -> oldest slot)
+        if not any(re.match(rf"^## {year}$", l) for l in lines):
+            # create the year section in descending position
+            for i, line in enumerate(lines):
+                m = re.match(r"^## (\d{4})$", line)
+                if m and int(m.group(1)) < year:
+                    lines[i:i] = [f"## {year}", "", bullet, ""]
+                    break
+            else:
+                # older than everything: before the footer separator, else at end
+                end = next((i for i in range(len(lines) - 1, -1, -1)
+                            if lines[i].strip() == "---"), len(lines))
+                lines[end:end] = [f"## {year}", "", bullet, ""]
+            continue
         year_idx = None
         for i, line in enumerate(lines):
             if re.match(rf"^## {year}$", line):
@@ -994,12 +1019,17 @@ def run_hook(mode):
                 return 0
         self_heal_hookspath(quiet=True)
         repo = run_checks()
-        errors = sum(1 for f in repo.findings if f.severity == "ERROR")
+        errors = [f for f in repo.findings if f.severity == "ERROR"]
         if errors:
-            report(repo, stream=sys.stderr)
+            # digest for the agent: capped, errors only — full list via manual run
+            for f in errors[:25]:
+                print(f.render(), file=sys.stderr)
+            if len(errors) > 25:
+                print(f"... and {len(errors) - 25} more errors "
+                      "(run: python3 scripts/validate.py)", file=sys.stderr)
             print(
-                "Repo invariants are violated (see ERROR lines above; each ends with a fix hint). "
-                "Mechanical issues: run `python3 scripts/validate.py --fix`.",
+                f"validate: {len(errors)} errors. Each line ends with a fix hint; "
+                "mechanical issues: run `python3 scripts/validate.py --fix`.",
                 file=sys.stderr,
             )
             return 2

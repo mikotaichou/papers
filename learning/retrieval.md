@@ -35,7 +35,7 @@
    - *Why*: **Critical analysis of long-context usage** - reveals U-shaped performance curve where models struggle with information in the middle of long contexts; important for RAG system design
 
 10. [Engram: Conditional Memory via Scalable Lookup](https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf) (Cheng et al., 2025)
-   - *Why*: **Novel memory-augmented architecture** - introduces conditional memory as a new sparsity axis complementing MoE; uses N-gram embeddings for O(1) lookup to retrieve static knowledge, freeing attention for global context and improving both knowledge retrieval and reasoning
+    - *Why*: **Novel memory-augmented architecture** - introduces conditional memory as a new sparsity axis complementing MoE; uses N-gram embeddings for O(1) lookup to retrieve static knowledge, freeing attention for global context and improving both knowledge retrieval and reasoning
 
 ## Federated & Distributed Learning
 **Goal**: Train models across distributed data
