@@ -16,72 +16,19 @@ This repository contains **254 carefully selected research papers and policy doc
 2. **📅 [Chronological Timeline](by-date.md)** - Papers organized by publication date (1997-2026)
 3. **📖 [Comprehensive Glossary](learning/glossary.md)** - 161 terms, concepts, and acronyms explained with context
 
-**Plus**: [Recommended tracks](#-how-to-use-this-repository), [notes on learning](#paper-reading-tips), and [quick start guides](#-quick-start) tailored to your role (beginner, practitioner, researcher, engineer, security specialist).
+**Plus**: [recommended tracks](learning-path.md#-recommended-tracks) and [notes on learning](learning-path.md#-notes-on-learning) tailored to your role (beginner, practitioner, researcher, engineer, security specialist).
 
 ---
 
 ## 🚀 Quick Start
 
-### For Beginners
-Start with the **[Learning Path](learning-path.md)** and follow **Foundations**. Read papers in sequence, focusing on the "Why" explanations. Check the **[Glossary](learning/glossary.md)** whenever you encounter unfamiliar terms.
+- **New to AI/ML?** Start with [Foundations](learning/foundations.md), keep the [Glossary](learning/glossary.md) nearby, and read the "Why" annotation before each paper.
+- **ML practitioner?** Follow the [Practitioner Track](learning-path.md#ml-practitioner-track): Language Models → Attention → Reasoning → Interpretability.
+- **Researcher?** Browse the [chronological view](by-date.md) for the latest work, or deep-dive via the [Researcher Track](learning-path.md#researcher-track).
+- **Engineer?** The [Engineer Track](learning-path.md#engineer-track) prioritizes efficiency, safety, and hardware.
+- **Security specialist?** Head to [Security, Safety & Robustness](learning/safety.md) via the [Security Specialist Track](learning-path.md#security-specialist-track).
 
-### For Practitioners
-Jump to relevant areas:
-- **LLMs & Training**: [Language Models](learning/language-models.md)
-- **Efficient Models**: [Attention](learning/attention.md)
-- **Production AI**: [Retrieval](learning/retrieval.md) (RAG), [Safety](learning/safety.md) (Security & Safety)
-
-### For Researchers
-Browse the **[Chronological View](by-date.md)** to see latest 2026 research, or deep-dive into:
-- [Alternative Architectures](learning/architectures.md)
-- [Interpretability](learning/interpretability.md)
-- [Advanced Topics](learning/advanced.md)
-
-### Quick Reference
-**Need a definition?** → Check the **[📖 Glossary](learning/glossary.md)** for 161 terms organized by category (architectures, training, NLP, security, etc.)
-
----
-
-## 🎓 How to Use This Repository
-
-### Reading Strategies
-
-**🌱 The Beginner Path** (3-6 months)
-1. Start with [Foundations](learning/foundations.md)
-2. Read key papers: [Attention Is All You Need](https://arxiv.org/abs/1706.03762) → [BERT](https://arxiv.org/abs/1810.04805) → [GPT-3](https://arxiv.org/abs/2005.14165)
-3. Focus on "Why" explanations before diving deep
-4. Take notes on connections between papers
-
-**⚡ The Practitioner Sprint** (1-2 months)
-1. Read Foundations summaries for context
-2. Deep-dive: [Language Models](learning/language-models.md) + [Attention](learning/attention.md) + [Retrieval](learning/retrieval.md)
-3. Skim related work sections to understand landscape
-4. Implement key techniques from papers
-
-**🔬 The Researcher Deep-Dive** (Ongoing)
-1. Use [chronological view](by-date.md) for latest research
-2. Focus on specific areas relevant to your research
-3. Read citations and follow paper connections
-4. Compare approaches across different papers
-
-**🛠️ The Engineer Focus** (2-4 weeks)
-1. Priority: [Attention](learning/attention.md) (Efficiency), [Safety](learning/safety.md) (Security & Safety), [Hardware](learning/hardware.md)
-2. Focus on implementation details and benchmarks
-3. Note production considerations and trade-offs
-
-**🛡️ The Security Specialist** (1-2 weeks)
-1. Core: [Safety](learning/safety.md)
-2. Context: [Language Models](learning/language-models.md) (LLM basics), [Reasoning](learning/reasoning.md) (Alignment)
-3. Focus on threat models, defense mechanisms, and safety evaluation
-
-### Paper Reading Tips
-
-1. **Start with abstracts** - Understand the core contribution
-2. **Read "Why" annotations** - Context before content
-3. **Check the [📖 Glossary](learning/glossary.md)** - Look up unfamiliar terms
-4. **Follow the narrative** - Papers build on each other
-5. **Take notes** - Document connections and insights
-6. **Implement key ideas** - Hands-on learning reinforces concepts
+All tracks, reading-order suggestions, and study tips live in **[learning-path.md](learning-path.md)**.
 
 ---
 

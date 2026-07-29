@@ -122,6 +122,8 @@ Prioritize [Language Models](learning/language-models.md), [Attention](learning/
 
 ## 📖 Notes on Learning
 
+- **Start with the abstract and the "Why" annotation**: Understand the core contribution and its context before diving into the paper
+- **Check the [📖 Glossary](learning/glossary.md)** whenever you hit an unfamiliar term
 - **Don't read linearly**: Papers build on each other, so refer back to earlier papers as needed
 - **Implement as you learn**: Try to implement key concepts from papers
 - **Join study groups**: Discuss papers with others
