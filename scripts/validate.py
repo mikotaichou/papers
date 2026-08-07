@@ -643,8 +643,10 @@ def check_counts(repo):
 
 def generate_coverage(repo):
     out = [
-        'This collection spans the full spectrum of modern AI/ML research. Each area page lists its papers with a short "why it matters" note:',
+        'Every paper lives in exactly one area page, with a short "why it matters" note. Areas are listed in curriculum order:',
         "",
+        "| Area | Papers | What's inside |",
+        "|------|--------|---------------|",
     ]
     for stem, emoji, label in AREAS:
         if stem not in repo.topics:
@@ -652,7 +654,7 @@ def generate_coverage(repo):
         sections = [sec["name"] for sec in repo.topics[stem] if sec["entries"]]
         count = sum(len(sec["entries"]) for sec in repo.topics[stem])
         names = " · ".join(sections)
-        out.append(f"- {emoji} **[{label}](learning/{stem}.md)** ({count}) — {names}")
+        out.append(f"| {emoji} **[{label}](learning/{stem}.md)** | {count} | {names} |")
     return out
 
 
@@ -958,7 +960,7 @@ def fix_coverage(repo):
         start, end = lines.index(COVERAGE_START), lines.index(COVERAGE_END)
         lines[start + 1:end] = generated
     else:
-        head = next((i for i, l in enumerate(lines) if l.startswith("## ") and "Coverage by Topic" in l), None)
+        head = next((i for i, l in enumerate(lines) if l.startswith("## ") and "The Areas" in l), None)
         if head is None:
             return
         end = next((i for i in range(head + 1, len(lines)) if lines[i].startswith("## ")), len(lines))
