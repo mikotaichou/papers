@@ -40,6 +40,9 @@
     - *Key insight*: Standard pruning naturally uncovers subnetworks whose initializations made them capable of training effectively; these winning tickets are typically 10-20% of the original network size
     - *Impact*: Sparked extensive research into sparse training, initialization strategies, and understanding what makes networks trainable
 
+11. [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972)
+    - *Why*: **Associative memory a decade before Hopfield** - shows that recurrent nets of threshold elements can store patterns and pattern sequences as stable equilibrium states and recall them under noise; the earliest formulation of what later became known as the Hopfield network
+
 ## Word Embeddings & Representations
 **Goal**: Learn how words become vectors - the bridge between discrete symbols and continuous neural networks
 

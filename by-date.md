@@ -1,6 +1,6 @@
 # Papers by Publication Date
 
-**Jump to year**: [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015) · [2014](#2014) · [2013](#2013) · [2012](#2012) · [2011](#2011) · [2010](#2010) · [2009](#2009) · [2004](#2004) · [1998](#1998) · [1997](#1997) · [1996](#1996)
+**Jump to year**: [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015) · [2014](#2014) · [2013](#2013) · [2012](#2012) · [2011](#2011) · [2010](#2010) · [2009](#2009) · [2004](#2004) · [1998](#1998) · [1997](#1997) · [1996](#1996) · [1972](#1972)
 
 ## 2026
 
@@ -499,9 +499,15 @@
 
 - 📄 [HIPAA Privacy Rule and AI](https://www.hhs.gov/hipaa/index.html) (US, 1996, ongoing interpretation) — [Policy & Governance](learning/policy.md)
 
+## 1972
+
+### 1972.11
+
+- [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972) — [Foundations](learning/foundations.md)
+
 ---
 
-**Total Papers in Learning Path**: 254 papers
+**Total Papers in Learning Path**: 255 papers
 **Paywalled Papers**: 8 (marked with 🔒)
   - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
   - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)

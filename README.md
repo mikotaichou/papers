@@ -2,7 +2,7 @@
 
 > A curated, pedagogically-organized collection of essential research papers spanning the landscape of modern artificial intelligence and machine learning.
 
-[![Papers](https://img.shields.io/badge/papers-254-blue.svg)](by-date.md)
+[![Papers](https://img.shields.io/badge/papers-255-blue.svg)](by-date.md)
 [![Learning Path](https://img.shields.io/badge/learning-14_areas-green.svg)](learning-path.md)
 [![Glossary](https://img.shields.io/badge/glossary-161_terms-purple.svg)](learning/glossary.md)
 
@@ -12,7 +12,7 @@
 
 ## 🎯 What's Inside
 
-This repository contains **254 carefully selected research papers and policy documents** organized in three complementary ways:
+This repository contains **255 carefully selected research papers and policy documents** organized in three complementary ways:
 
 1. **📚 [Structured Learning Path](learning-path.md)** - Topic areas and curated tracks from foundations to cutting-edge research
 2. **📅 [Chronological Timeline](by-date.md)** - Papers organized by publication date (1997-2026)
@@ -40,7 +40,7 @@ The learning path is organized into **14 topic areas**; use [learning-path.md](l
 
 | Area | Topic | Papers | Focus |
 |------|-------|--------|-------|
-| **[Foundations](learning/foundations.md)** | 🏗️ **Foundations (Start Here)** | 25 | Deep learning basics, embeddings, CNNs, RNNs, GANs, tokenization |
+| **[Foundations](learning/foundations.md)** | 🏗️ **Foundations (Start Here)** | 26 | Deep learning basics, embeddings, CNNs, RNNs, GANs, tokenization |
 | **[Language Models](learning/language-models.md)** | 🤖 **Large Language Models** | 21 | Transformers, BERT, GPT, training at scale |
 | **[Attention](learning/attention.md)** | ⚡ **Attention Mechanisms & Context** | 11 | FlashAttention 1 & 2, efficient attention, long context |
 | **[Retrieval](learning/retrieval.md)** | 🔍 **Retrieval & Knowledge Systems** | 11 | THE RAG paper, dense retrieval, kNN-LM, semantic search |
@@ -55,7 +55,7 @@ The learning path is organized into **14 topic areas**; use [learning-path.md](l
 | **[Human-AI Interaction](learning/human-ai-interaction.md)** | 🧠 **Human-AI Interaction & Cognition** | 11 | Trust, automation bias, cognitive effects, human-AI teams |
 | **[Policy](learning/policy.md)** | 📜 **Policy, Safety & Societal Impact** | 53 | GDPR, EU AI Act, US federal & state AI law, NIST AI RMF |
 
-**Total**: 254 papers across 14 areas (including 53 policy documents & frameworks)
+**Total**: 255 papers across 14 areas (including 53 policy documents & frameworks)
 
 ---
 
@@ -65,7 +65,7 @@ The learning path is organized into **14 topic areas**; use [learning-path.md](l
 This collection spans the full spectrum of modern AI/ML research, organized by area:
 
 ### 🏗️ Foundations
-- **Deep Learning Basics**: [Deep Learning (Nature Review)](https://www.nature.com/articles/nature14539) · [Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf) · [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167) · [Gradient-Based Learning Applied to Document Recognition (LeNet)](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) · [ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)](https://papers.nips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) · [Going Deeper with Convolutions (GoogLeNet)](https://arxiv.org/abs/1409.4842) · [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027) · [Multi-Scale Context Aggregation by Dilated Convolutions](https://arxiv.org/abs/1511.07122) · [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635)
+- **Deep Learning Basics**: [Deep Learning (Nature Review)](https://www.nature.com/articles/nature14539) · [Understanding the Difficulty of Training Deep Feedforward Neural Networks](https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf) · [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167) · [Gradient-Based Learning Applied to Document Recognition (LeNet)](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) · [ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)](https://papers.nips.cc/paper_files/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf) · [Going Deeper with Convolutions (GoogLeNet)](https://arxiv.org/abs/1409.4842) · [Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385) · [Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027) · [Multi-Scale Context Aggregation by Dilated Convolutions](https://arxiv.org/abs/1511.07122) · [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635) · [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf)
 - **Word Embeddings & Representations**: [Efficient Estimation of Word Representations in Vector Space (Word2Vec)](https://arxiv.org/abs/1301.3781) · [GloVe: Global Vectors for Word Representation](https://aclanthology.org/D14-1162/) · [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215) · [Pointer Networks](https://arxiv.org/abs/1506.03134)
 - **Sequence Models**: [Long Short-Term Memory (LSTM)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory) · [Recurrent Neural Network Regularization](https://arxiv.org/abs/1409.2329) · [MOMENT: A Family of Open Time-series Foundation Models](https://arxiv.org/pdf/2402.03885)
 - **Generative Models**: [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) · [Variational Lossy Autoencoder](https://arxiv.org/abs/1611.02731) · [Dualscale Diffusion: Adaptive Feature Balancing for Low-Dimensional Generative Models](https://sakana.ai/assets/ai-scientist/adaptive_dual_scale_denoising.pdf)
