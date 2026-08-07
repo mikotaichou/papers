@@ -642,19 +642,17 @@ def check_counts(repo):
 
 
 def generate_coverage(repo):
-    out = ["This collection spans the full spectrum of modern AI/ML research, organized by area:", ""]
+    out = [
+        'This collection spans the full spectrum of modern AI/ML research. Each area page lists its papers with a short "why it matters" note:',
+        "",
+    ]
     for stem, emoji, label in AREAS:
         if stem not in repo.topics:
             continue
-        out.append(f"### {emoji} {label}")
-        for sec in repo.topics[stem]:
-            if not sec["entries"]:
-                continue
-            links = " · ".join(f'[{e["title"]}]({e["url"]})' for e in sec["entries"])
-            out.append(f"- **{sec['name']}**: {links}")
-        out.append("")
-    if out and out[-1] == "":
-        out.pop()
+        sections = [sec["name"] for sec in repo.topics[stem] if sec["entries"]]
+        count = sum(len(sec["entries"]) for sec in repo.topics[stem])
+        names = " · ".join(sections)
+        out.append(f"- {emoji} **[{label}](learning/{stem}.md)** ({count}) — {names}")
     return out
 
 
