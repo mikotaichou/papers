@@ -1,8 +1,8 @@
-# Reasoning & Alignment
+# Reasoning & Agents
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Retrieval](retrieval.md) | [Architectures](architectures.md) | [Safety](safety.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Retrieval](retrieval.md) | [Next: Architectures →](architectures.md) | [📖 Glossary](glossary.md)
 
-**Overview**: Raw language models don't naturally follow instructions or break down complex problems step-by-step. This phase covers the crucial techniques that transform base models into helpful, harmless assistants: [reinforcement learning from human feedback (RLHF)](glossary.md#rlhf-reinforcement-learning-from-human-feedback) that aligns models with human preferences, [chain-of-thought prompting](glossary.md#chain-of-thought-prompting) that enables multi-step reasoning, and [constitutional AI](glossary.md#constitutional-ai) approaches that encode ethical principles. You'll also learn about [agent](glossary.md#agent) frameworks like [ReAct](glossary.md#react-reasoning-and-acting) that give models the ability to use tools and take actions. These methods are what make modern AI systems genuinely useful and (relatively) safe.
+**Overview**: Raw language models don't naturally follow instructions or break down complex problems step-by-step. This area covers the crucial techniques that transform base models into helpful, harmless assistants: [reinforcement learning from human feedback (RLHF)](glossary.md#rlhf-reinforcement-learning-from-human-feedback) that aligns models with human preferences, [chain-of-thought prompting](glossary.md#chain-of-thought-prompting) that enables multi-step reasoning, and [constitutional AI](glossary.md#constitutional-ai) approaches that encode ethical principles. You'll also learn about [agent](glossary.md#agent) frameworks like [ReAct](glossary.md#react-reasoning-and-acting) that give models the ability to use tools and take actions. These methods are what make modern AI systems genuinely useful and (relatively) safe.
 
 ## Teaching Models to Reason
 **Goal**: Build models that can reason and solve complex problems

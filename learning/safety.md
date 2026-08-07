@@ -1,8 +1,8 @@
 # Security, Safety & Robustness
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Interpretability](interpretability.md) | [Reasoning](reasoning.md) | [Policy](policy.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Interpretability](interpretability.md) | [Next: Advanced →](advanced.md) | [📖 Glossary](glossary.md)
 
-**Overview**: AI systems face unique challenges in both **security** and **safety** that don't exist in traditional software. This phase examines both dimensions:
+**Overview**: AI systems face unique challenges in both **security** and **safety** that don't exist in traditional software. This area examines both dimensions:
 
 **Security** focuses on protecting systems from attacks: [adversarial examples](glossary.md#adversarial-example) that fool models with imperceptible perturbations, [jailbreaking](glossary.md#jailbreaking) techniques that bypass safety guardrails, [prompt injection](glossary.md#prompt-injection) attacks that hijack model behavior, and [data poisoning](glossary.md#data-poisoning) that corrupts training.
 
@@ -55,6 +55,9 @@ As AI systems control increasingly important decisions—from content moderation
 8. [Bad Memory: Evaluating Prompt Injection Risks from Memory in Agentic Systems](https://arxiv.org/abs/2607.14611) (Gadgil et al., 2026)
    - *Why*: Shows that persistent memory files change the prompt injection threat model - payloads planted in an agent's memory attack current and future sessions, even though getting an agent to overwrite its own memory from untrusted content is hard; evaluates two coding agents across four models and measures how attack success and payload persistence vary by system, adversarial goal, and multi-session sequence
 
+9. [AI Agents May Always Fall for Prompt Injections](https://arxiv.org/abs/2605.17634) (Abdelnabi & Bagdasarian, 2026)
+   - *Why*: Reframes prompt injection through Contextual Integrity theory and argues an "impossibility result": adversaries can always craft contexts that make blocked flows look legitimate, while tightening norms blocks legitimate flows; shows data/instruction separation defenses miss contextual manipulation attacks
+
 ## Safety Evaluation & Red Teaming
 **Goal**: Systematically evaluate AI systems for safety risks and harmful behaviors
 
@@ -83,6 +86,9 @@ As AI systems control increasingly important decisions—from content moderation
 8. [Beyond Red-Teaming: Formal Guarantees of LLM Guardrail Classifiers](https://arxiv.org/abs/2605.10901) (Kezins et al., 2026)
    - *Why*: Shifts guardrail verification from discrete input space to the classifier's pre-activation layer, where harmful prompts form convex regions certifiable via monotonicity of the sigmoid head; introduces SVD-aligned hyper-rectangles (exact) and Gaussian Mixture Models (probabilistic) for region construction, exposing large safety gaps in BERT (55-90% coverage) versus more stable GPT-2/Llama classifiers (~80-90%)
 
+9. [GPTFuzzer: Red Teaming Large Language Models with Auto-Generated Jailbreak Prompts](https://arxiv.org/abs/2309.10253) (Yu et al., 2023)
+   - *Why*: Automates jailbreak discovery by mutating human-written templates with a fuzzing loop (seed selection, mutation operators, judgment model); achieves >90% attack success against ChatGPT and Llama-2 even from unsuccessful seeds; foundational for scalable automated red teaming
+
 ## Bias, Fairness & Robustness
 **Goal**: Detect, measure, and mitigate bias in AI systems while maintaining robustness
 
@@ -105,44 +111,40 @@ As AI systems control increasingly important decisions—from content moderation
 1. [RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models](https://arxiv.org/abs/2009.11462) (Gehman et al., 2020)
    - *Why*: **Foundational toxicity benchmark** - systematically evaluates how likely language models are to generate toxic content; reveals that larger models can be more toxic; critical for understanding safety risks in text generation
 
-2. [Perspective API](https://perspectiveapi.com/) (Jigsaw/Google)
+2. [Perspective API](https://perspectiveapi.com/) (Jigsaw/Google, 2017)
    - *Why*: **Production toxicity detection system** - widely-used API for identifying toxic content; trained on millions of human annotations; foundational for content moderation in production systems
    - *Note*: API/service rather than paper, but essential practical reference
 
 3. [The Pile: An 800GB Dataset of Diverse Text for Language Modeling](https://arxiv.org/abs/2101.00027) (Gao et al., 2020)
    - *Why*: Large-scale dataset that includes analysis of toxic content; important for understanding training data composition and its impact on model behavior; highlights challenges in web-scraped training data
 
-4. [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) (Lin et al., 2022)
-   - *Why*: Benchmark measuring how models generate misinformation by mimicking human falsehoods; reveals counterintuitive scaling where larger models can be less truthful
-   - *Note*: Also listed in 8.3 for safety evaluation context
+*See also*: [TruthfulQA](#safety-evaluation--red-teaming) (listed under Safety Evaluation & Red Teaming) for how models mimic human falsehoods and generate misinformation.
 
 ## Long-term Safety Research
 **Goal**: Understand and address long-term safety challenges for advanced AI systems
 
-1. [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565) (Amodei et al., 2016)
-   - *Why*: **Foundational long-term safety roadmap** - defines research agenda for safe AI including scalable oversight and avoiding reward hacking; continues to guide safety research a decade later
-   - *Note*: Also listed in 8.1 as foundational alignment paper
+*See also*: [Concrete Problems in AI Safety](#ai-alignment--safety-training) (listed under AI Alignment & Safety Training) — the foundational long-term safety roadmap that continues to guide this research agenda.
 
-2. [Sleeper Agents: Training Deceptive LLMs That Persist Through Safety Training](https://arxiv.org/abs/2401.05566) (Hubinger et al., 2024)
+1. [Sleeper Agents: Training Deceptive LLMs That Persist Through Safety Training](https://arxiv.org/abs/2401.05566) (Hubinger et al., 2024)
    - *Why*: **Critical deceptive alignment research** - demonstrates that LLMs can be trained with hidden behaviors that persist through safety training; shows current safety techniques may be insufficient for detecting deceptive models; essential for understanding alignment challenges
 
-3. [Scalable Oversight](https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models) (Anthropic, 2022)
+2. [Scalable Oversight](https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models) (Anthropic, 2022)
    - *Why*: **Key long-term safety challenge** - addresses how to supervise AI systems that may become more capable than their human supervisors; explores techniques like debate, recursive reward modeling, and amplification
    - *Note*: Research blog post from Anthropic; foundational concept in AI safety
 
-4. [AI Safety Gridworlds](https://arxiv.org/abs/1711.09883) (Leike et al., 2017)
+3. [AI Safety Gridworlds](https://arxiv.org/abs/1711.09883) (Leike et al., 2017)
    - *Why*: Suite of reinforcement learning environments testing safety properties: safe interruptibility, avoiding side effects, absent supervisor, reward gaming, and more; foundational benchmark for safety research
 
-5. [Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html) (Elhage et al., 2022)
-   - *Why*: **Mechanistic interpretability for safety** - demonstrates how to reverse-engineer model behavior to understand what models are actually doing; essential for detecting deceptive or misaligned behavior
-   - *Note*: Part of Anthropic's interpretability research; also relevant for [Interpretability](interpretability.md)
+4. [Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small](https://arxiv.org/abs/2211.00593) (Wang et al., 2022)
+   - *Why*: **Mechanistic interpretability for safety** - reverse-engineers a complete 26-head circuit for a natural language task, demonstrating that model behavior can be mechanistically understood; essential groundwork for detecting deceptive or misaligned behavior
+   - *Note*: Also relevant for [Interpretability](interpretability.md)
 
-6. [Towards Guaranteed Safe AI: A Framework for Ensuring Robust and Reliable AI Systems](https://arxiv.org/abs/2405.06624) (Dalrymple et al., 2024)
+5. [Towards Guaranteed Safe AI: A Framework for Ensuring Robust and Reliable AI Systems](https://arxiv.org/abs/2405.06624) (Dalrymple et al., 2024)
    - *Why*: Proposes world model-based safety framework with quantitative guarantees; addresses how to build AI systems with provable safety properties; important for high-stakes deployment scenarios
 
-7. [Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data](https://arxiv.org/pdf/2507.14805) (Cloud et al., 2025)
+6. [Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data](https://arxiv.org/pdf/2507.14805) (Cloud et al., 2025)
    - *Why*: **Critical safety finding** - demonstrates that language models can transmit behavioral traits (including misalignment) through semantically unrelated data like number sequences, code, or reasoning traces; occurs even when data is filtered to remove explicit references to the trait; reveals unexpected pitfall for AI development where distillation could propagate unintended traits; only works when teacher and student share similar initializations
 
 ---
 
-**Related**: [Interpretability](interpretability.md) | [Advanced](advanced.md) | [Policy](policy.md)
+**Related**: [Interpretability](interpretability.md) | [Advanced](advanced.md) | [Policy](policy.md) | [Human-AI Interaction](human-ai-interaction.md)

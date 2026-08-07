@@ -1,8 +1,8 @@
 # Foundations (Start Here)
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Language Models](language-models.md)
+[← Back to Learning Path](../learning-path.md) | [Next: Language Models →](language-models.md) | [📖 Glossary](glossary.md)
 
-**Overview**: This phase establishes the essential groundwork for understanding modern AI systems. You'll explore the fundamental principles of [deep learning](glossary.md#deep-learning), from basic neural network architectures to the revolutionary [transformer](glossary.md#transformer) model that underpins nearly all current LLMs. By mastering these foundational concepts—including training dynamics, [attention mechanisms](glossary.md#attention-mechanism), and the shift from convolutional to attention-based architectures—you'll build the technical vocabulary and intuition needed for everything that follows. Think of this as learning the alphabet before reading literature.
+**Overview**: This area establishes the essential groundwork for understanding modern AI systems. You'll explore the fundamental principles of [deep learning](glossary.md#deep-learning), from basic neural network architectures to the revolutionary [transformer](glossary.md#transformer) model that underpins nearly all current LLMs. By mastering these foundational concepts—including training dynamics, [attention mechanisms](glossary.md#attention-mechanism), and the shift from convolutional to attention-based architectures—you'll build the technical vocabulary and intuition needed for everything that follows. Think of this as learning the alphabet before reading literature.
 
 ## Deep Learning Basics
 **Goal**: Understand the fundamental building blocks of modern deep learning
@@ -36,12 +36,12 @@
    - *Why*: **Dilated convolutions for dense prediction** - enables exponential expansion of receptive field without losing resolution; foundational for semantic segmentation and dense prediction tasks
 
 10. [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635) (Frankle & Carbin, ICLR 2019)
-   - *Why*: **Fundamental insight into network initialization and sparsity** - demonstrates that dense networks contain sparse "winning ticket" subnetworks that can train to full accuracy from initialization; reveals the critical importance of weight initialization for trainability; foundational for understanding why pruning works and how to design efficient architectures
-   - *Key insight*: Standard pruning naturally uncovers subnetworks whose initializations made them capable of training effectively; these winning tickets are typically 10-20% of the original network size
-   - *Impact*: Sparked extensive research into sparse training, initialization strategies, and understanding what makes networks trainable
+    - *Why*: **Fundamental insight into network initialization and sparsity** - demonstrates that dense networks contain sparse "winning ticket" subnetworks that can train to full accuracy from initialization; reveals the critical importance of weight initialization for trainability; foundational for understanding why pruning works and how to design efficient architectures
+    - *Key insight*: Standard pruning naturally uncovers subnetworks whose initializations made them capable of training effectively; these winning tickets are typically 10-20% of the original network size
+    - *Impact*: Sparked extensive research into sparse training, initialization strategies, and understanding what makes networks trainable
 
 11. [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972)
-   - *Why*: **Associative memory a decade before Hopfield** - shows that recurrent nets of threshold elements can store patterns and pattern sequences as stable equilibrium states and recall them under noise; the earliest formulation of what later became known as the Hopfield network
+    - *Why*: **Associative memory a decade before Hopfield** - shows that recurrent nets of threshold elements can store patterns and pattern sequences as stable equilibrium states and recall them under noise; the earliest formulation of what later became known as the Hopfield network
 
 ## Word Embeddings & Representations
 **Goal**: Learn how words become vectors - the bridge between discrete symbols and continuous neural networks

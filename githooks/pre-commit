@@ -1,0 +1,4 @@
+#!/bin/sh
+# Validates repo invariants before every commit. Bypass with: git commit --no-verify
+# Activated automatically: scripts/validate.py sets core.hooksPath=githooks on any run.
+exec python3 "$(git rev-parse --show-toplevel)/scripts/validate.py"

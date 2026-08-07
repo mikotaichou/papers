@@ -1,13 +1,14 @@
 # Vision & Multimodal Systems
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Probabilistic](probabilistic.md) | [Hardware](hardware.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Probabilistic](probabilistic.md) | [Next: Hardware →](hardware.md) | [📖 Glossary](glossary.md)
 
-**Overview**: The transformer revolution didn't stop at text—it transformed computer vision too. This phase explores how [attention mechanisms](glossary.md#attention-mechanism) replaced [convolutional neural networks](glossary.md#cnn-convolutional-neural-network) as the dominant paradigm in vision, how [CLIP](glossary.md#clip-contrastive-language-image-pre-training) bridges vision and language through contrastive learning, and how models like [SAM](glossary.md#sam-segment-anything-model) achieve unprecedented zero-shot image segmentation. You'll see how the same principles that power ChatGPT enable models to understand and generate images, paving the way for truly [multimodal](glossary.md#multimodal-learning) AI systems that can seamlessly work with text, images, and video together.
+**Overview**: The transformer revolution didn't stop at text—it transformed computer vision too. This area explores how [attention mechanisms](glossary.md#attention-mechanism) replaced [convolutional neural networks](glossary.md#cnn-convolutional-neural-network) as the dominant paradigm in vision, how [CLIP](glossary.md#clip-contrastive-language-image-pre-training) bridges vision and language through contrastive learning, and how models like [SAM](glossary.md#sam-segment-anything-model) achieve unprecedented zero-shot image segmentation. You'll see how the same principles that power ChatGPT enable models to understand and generate images, paving the way for truly [multimodal](glossary.md#multimodal-learning) AI systems that can seamlessly work with text, images, and video together.
 
 ## Vision Transformers
+**Goal**: Understand how transformers replaced CNNs as the dominant vision paradigm
 
 1. [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (Vision Transformer/ViT)](https://arxiv.org/abs/2010.11929) (Dosovitskiy et al., 2021)
-   - *Why*: **Missing but crucial** - applies pure transformers to vision; connects vision and language model architectures
+   - *Why*: **The Vision Transformer paper** - applies pure transformers to image recognition by treating patches as tokens; connects vision and language model architectures and underpins modern multimodal models
 
 2. [Learning Transferable Visual Models From Natural Language Supervision (CLIP)](https://arxiv.org/abs/2103.00020) (Radford et al., 2021)
    - *Why*: **The bridge to multimodal AI** - learns vision-language alignment from 400M image-text pairs; enables zero-shot transfer
@@ -25,6 +26,7 @@
    - *Why*: **GAN-based structured prediction** - uses an adversarial discriminator to enforce higher-order spatial consistency in segmentation maps, catching implausible label configurations that per-pixel losses miss; demonstrates that adversarial training can improve any dense prediction task by learning to distinguish realistic outputs from artifacts
 
 ## Multimodal & Speech
+**Goal**: Connect vision, language, and audio in unified models
 
 1. [Visual Instruction Tuning (LLaVA)](https://arxiv.org/abs/2304.08485) (Liu et al., 2023)
    - *Why*: **Pioneering vision-language instruction following** - connects vision encoder with LLM for multimodal conversations; demonstrates that instruction tuning works across modalities; foundation for many open-source multimodal models
@@ -33,6 +35,7 @@
    - *Why*: **End-to-end speech recognition** - demonstrates deep learning for speech without hand-engineered features; scales to multiple languages; foundational for modern speech systems
 
 ## Vision Interpretability
+**Goal**: Understand what vision models learn and how they decide
 
 1. [Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps](https://arxiv.org/abs/1312.6034) (2013)
    - *Why*: **Gradient-based saliency maps** - introduces backpropagation-based visualization to highlight which input pixels most influence a CNN's classification decision; one of the earliest methods for explaining individual predictions in vision models; foundational technique that led to Grad-CAM, Integrated Gradients, and modern attribution methods

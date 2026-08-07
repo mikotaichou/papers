@@ -1,6 +1,6 @@
 # Policy, Safety & Societal Impact
 
-[← Back to Learning Path](../learning-path.md) | [📖 Glossary](glossary.md) | Related: [Hardware](hardware.md) | [Safety](safety.md)
+[← Back to Learning Path](../learning-path.md) | [← Prev: Human-AI Interaction](human-ai-interaction.md) | [📖 Glossary](glossary.md)
 
 **Overview**: Technical capabilities alone don't determine AI's impact on society—policy, governance, and ethical considerations are equally critical. This area steps back to examine the bigger picture: how should AI systems be regulated, what are the existential and near-term risks, how do we ensure equitable access and prevent misuse, and what frameworks exist for responsible AI development? Whether you're building AI systems, advising organizations, or simply want to be an informed citizen, understanding these policy and safety considerations is essential as AI becomes increasingly central to society.
 
@@ -215,7 +215,7 @@ With federal AI-specific legislation stalled, states became the primary source o
     - *Status*: Released November 2025. Not enforceable law; AI is governed through the Digital Personal Data Protection Act and sector rules
     - *Note*: Verify the current guideline URL on the IndiaAI portal, which reorganizes frequently
 
-21. 📄 Brazil PL 2338/2023: Proposed AI Framework (Brazil, pending)
+21. 📄 [Brazil PL 2338/2023: Proposed AI Framework](https://www25.senado.leg.br/web/atividade/materias/-/materia/157233) (Brazil, introduced 2023; pending)
     - *Why*: Closely tracks the EU AI Act's risk-based structure; the leading test of whether that model is adopted across Latin America
     - *Status*: **Not yet law.** Approved by the Senate 10 December 2024; under consideration in the Chamber of Deputies at time of writing. Included here as pending legislation, not a binding instrument
 
@@ -239,7 +239,7 @@ With federal AI-specific legislation stalled, states became the primary source o
    - *Structure*: Suggested actions organized around governance, content provenance, pre-deployment testing and incident disclosure, mapped back to the RMF's GOVERN/MAP/MEASURE/MANAGE functions
    - *Date*: Published 26 July 2024
 
-3. 📄 [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/aisi) (NIST, ongoing)
+3. 📄 [Center for AI Standards and Innovation (CAISI)](https://www.nist.gov/aisi) (NIST, 2025)
    - *Why*: The US government's technical AI evaluation body; its outputs feed the standards regulators reference
    - *Note*: Renamed from the US AI Safety Institute in mid-2025 - the rename tracked the broader federal shift from safety framing to standards-and-innovation framing
    - *Recent work*: AI Agent Standards Initiative, announced February 2026
@@ -260,7 +260,7 @@ With federal AI-specific legislation stalled, states became the primary source o
    - *Coverage*: Data quality, model development, deployment, monitoring
    - *Note*: [Purchase required](https://www.iso.org/standard/74438.html)
 
-7. 📄 [IEEE 7000 Series on AI Ethics](https://standards.ieee.org/initiatives/autonomous-intelligence-systems/standards/) (IEEE, Ongoing)
+7. 📄 [IEEE 7000 Series on AI Ethics](https://standards.ieee.org/initiatives/autonomous-intelligence-systems/standards/) (IEEE, 2021, ongoing)
    - *Why*: Technical standards for embedding ethics into system design
    - *Key standards*:
      - IEEE 7000: Systems engineering for ethical concerns
@@ -310,7 +310,7 @@ With federal AI-specific legislation stalled, states became the primary source o
 
 ### Criminal Justice
 
-6. 📄 [Algorithmic Accountability in Criminal Justice (Various state laws)](https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation)
+6. 📄 [Algorithmic Accountability in Criminal Justice (Various state laws)](https://www.ncsl.org/technology-and-communication/artificial-intelligence-2025-legislation) (NCSL tracker, 2025)
    - *Why*: Many states restrict or require transparency for risk assessment tools
    - *Examples*: California AB 2542, Wisconsin's Loomis decision
 
@@ -325,7 +325,7 @@ With federal AI-specific legislation stalled, states became the primary source o
    - *Why*: Government perspective on open model policies and dual-use concerns
    - *Note*: Official NTIA government report - freely available
 
-2. 📄 [Export Controls on AI & Emerging Technologies](https://www.bis.doc.gov/index.php/policy-guidance/advanced-computing-and-semiconductor-manufacturing-items) (US Bureau of Industry and Security, Ongoing)
+2. 📄 [Export Controls on AI & Emerging Technologies](https://www.bis.doc.gov/index.php/policy-guidance/advanced-computing-and-semiconductor-manufacturing-items) (US Bureau of Industry and Security, 2022, ongoing)
    - *Why*: Controls on exporting AI chips (GPUs), training techniques, and potentially models
    - *2022 updates*: Restrictions on advanced chip exports to China
    - *Ongoing*: Potential controls on model weights, training data
@@ -346,7 +346,7 @@ With federal AI-specific legislation stalled, states became the primary source o
 
 **Why this matters**: Many organizations operate ahead of regulation. These frameworks represent current best practices and often foreshadow future requirements.
 
-1. 📄 [Partnership on AI Guidelines](https://partnershiponai.org/) (Partnership on AI, Ongoing)
+1. 📄 [Partnership on AI Guidelines](https://partnershiponai.org/) (Partnership on AI, 2016, ongoing)
    - *Why*: Multi-stakeholder organization developing AI best practices
    - *Members*: Google, Meta, Microsoft, Amazon, civil society groups
    - *Key work*: AI incident database, responsible practices library
@@ -361,7 +361,7 @@ With federal AI-specific legislation stalled, states became the primary source o
    - *Purpose*: Increase transparency about data provenance, composition, biases
    - *Impact*: Influenced EU AI Act data documentation requirements
 
-4. 📄 [AI Incident Database](https://incidentdatabase.ai/) (Partnership on AI, Ongoing)
+4. 📄 [AI Incident Database](https://incidentdatabase.ai/) (Partnership on AI, 2020, ongoing)
    - *Why*: Systematic collection of AI system failures and harms
    - *Learning*: Pattern identification across incidents
    - *Examples*: Hiring discrimination, safety failures, privacy breaches
@@ -414,16 +414,16 @@ State AI law moves faster than any curated list can. Use these for current statu
 
 ## Key Takeaways
 
-1. **Multi-jurisdictional complexity**: AI systems often face overlapping regulations across geographies and sectors
-2. **Risk-based approach emerging**: Most frameworks categorize AI by risk level with proportional requirements — though Texas and India show that a light-touch or intent-based alternative is actively contested, not settled
-3. **The ground shifts under you**: between 2024 and 2026 the EU deferred its high-risk deadlines, the US federal posture reversed and then moved to preempt the states, Colorado repealed its own landmark law before it took effect, and two federal guidance documents were withdrawn outright. Treat every effective date as provisional and check the primary source
-4. **US regulation is currently state regulation**: with federal AI legislation stalled, binding US obligations come mostly from states — and are now the subject of an explicit federal preemption effort (EO 14365)
-5. **Documentation is critical**: Model cards, datasheets, impact assessments increasingly expected or required
-6. **Human oversight emphasized**: Most frameworks require meaningful human involvement in high-stakes decisions
-7. **Accountability clearly assigned**: Organizations can't hide behind "the algorithm did it"
-8. **Transparency vs. IP tension**: Balancing explainability requirements with proprietary interests
-9. **Continuous monitoring**: One-time validation insufficient; ongoing performance monitoring required
-10. **Interdisciplinary teams**: Compliance requires legal, technical, and domain expertise
+- **Multi-jurisdictional complexity**: AI systems often face overlapping regulations across geographies and sectors
+- **Risk-based approach emerging**: Most frameworks categorize AI by risk level with proportional requirements — though Texas and India show that a light-touch or intent-based alternative is actively contested, not settled
+- **The ground shifts under you**: between 2024 and 2026 the EU deferred its high-risk deadlines, the US federal posture reversed and then moved to preempt the states, Colorado repealed its own landmark law before it took effect, and two federal guidance documents were withdrawn outright. Treat every effective date as provisional and check the primary source
+- **US regulation is currently state regulation**: with federal AI legislation stalled, binding US obligations come mostly from states — and are now the subject of an explicit federal preemption effort (EO 14365)
+- **Documentation is critical**: Model cards, datasheets, impact assessments increasingly expected or required
+- **Human oversight emphasized**: Most frameworks require meaningful human involvement in high-stakes decisions
+- **Accountability clearly assigned**: Organizations can't hide behind "the algorithm did it"
+- **Transparency vs. IP tension**: Balancing explainability requirements with proprietary interests
+- **Continuous monitoring**: One-time validation insufficient; ongoing performance monitoring required
+- **Interdisciplinary teams**: Compliance requires legal, technical, and domain expertise
 
 ---
 
@@ -446,4 +446,4 @@ State AI law moves faster than any curated list can. Use these for current statu
 
 ---
 
-[← Back to Learning Path](../learning-path.md)
+**Related**: [Hardware](hardware.md) | [Safety](safety.md) | [Human-AI Interaction](human-ai-interaction.md)
