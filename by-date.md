@@ -433,9 +433,15 @@
 - 🔒 [Long Short-Term Memory (LSTM)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory) (1997) - *Paywalled*
 - [Gradient-Based Learning Applied to Document Recognition (LeNet)](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) (1998)
 
+## 1972
+
+### 1972.11
+
+- [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972)
+
 ---
 
-**Total Papers in Learning Path**: 237 papers
+**Total Papers in Learning Path**: 238 papers
 **Paywalled Papers**: 9 (marked with 🔒)
 **Open Access**: ~96%
 
