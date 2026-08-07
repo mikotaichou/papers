@@ -50,6 +50,7 @@ body:
       label: Suggested Area
       description: Which topic area does this paper best fit into?
       options:
+        - "Classics: The Historical Roots of Neural Networks"
         - "Foundations (Start Here)"
         - "Large Language Models"
         - "Attention Mechanisms & Context"

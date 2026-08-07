@@ -41,6 +41,7 @@ COVERAGE_END = "<!-- COVERAGE:END -->"
 # Curriculum order; label/emoji used for by-date back-links and the generated
 # README coverage block. Files not listed here still validate (fallback label).
 AREAS = [
+    ("classics", "🏺", "Classics"),
     ("foundations", "🏗️", "Foundations"),
     ("language-models", "🤖", "Language Models"),
     ("attention", "⚡", "Attention"),
