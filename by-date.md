@@ -1,6 +1,6 @@
 # Papers by Publication Date
 
-**Jump to year**: [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015) · [2014](#2014) · [2013](#2013) · [2012](#2012) · [2011](#2011) · [2010](#2010) · [2009](#2009) · [2004](#2004) · [1998](#1998) · [1997](#1997) · [1996](#1996) · [1972](#1972)
+**Jump to year**: [2026](#2026) · [2025](#2025) · [2024](#2024) · [2023](#2023) · [2022](#2022) · [2021](#2021) · [2020](#2020) · [2019](#2019) · [2018](#2018) · [2017](#2017) · [2016](#2016) · [2015](#2015) · [2014](#2014) · [2013](#2013) · [2012](#2012) · [2011](#2011) · [2010](#2010) · [2009](#2009) · [2006](#2006) · [2004](#2004) · [1998](#1998) · [1997](#1997) · [1996](#1996) · [1994](#1994) · [1991](#1991) · [1990](#1990) · [1989](#1989) · [1986](#1986) · [1985](#1985) · [1982](#1982) · [1980](#1980) · [1975](#1975) · [1974](#1974) · [1972](#1972) · [1971](#1971) · [1970](#1970) · [1969](#1969) · [1967](#1967) · [1962](#1962) · [1960](#1960) · [1958](#1958) · [1949](#1949) · [1948](#1948) · [1943](#1943) · [1936](#1936)
 
 ## 2026
 
@@ -222,6 +222,7 @@
 ## 2022
 
 ### 2022.12
+- [Annotated History of Modern AI and Deep Neural Networks](https://arxiv.org/abs/2212.11279) (Schmidhuber, 2022) — [Classics](learning/classics.md)
 - [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) (Bai et al., 2022) — [Safety & Security](learning/safety.md)
 
 ### 2022.11
@@ -364,6 +365,7 @@
 - [Understanding Black-box Predictions via Influence Functions](https://arxiv.org/abs/1703.04730) (2017) — [Interpretability](learning/interpretability.md)
 
 ### 2017.02
+- [On the Origin of Deep Learning](https://arxiv.org/abs/1702.07800) (Wang & Raj, 2017) — [Classics](learning/classics.md)
 - [Perspective API](https://perspectiveapi.com/) (Jigsaw/Google, 2017) — [Safety & Security](learning/safety.md)
 - [Towards A Rigorous Science of Interpretable Machine Learning](https://arxiv.org/abs/1702.08608) (2017) — [Interpretability](learning/interpretability.md)
 - [Visualizing Deep Neural Network Decisions: Prediction Difference Analysis](https://arxiv.org/abs/1702.04595) (2017) — [Vision & Multimodal](learning/vision.md)
@@ -442,6 +444,9 @@
 ### 2014.06
 - [Generative Adversarial Networks](https://arxiv.org/abs/1406.2661) (2014) — [Foundations](learning/foundations.md)
 
+### 2014.04
+- [Deep Learning in Neural Networks: An Overview](https://arxiv.org/abs/1404.7828) (Schmidhuber, 2015) — [Classics](learning/classics.md)
+
 ### 2014.01
 - [GloVe: Global Vectors for Word Representation](https://aclanthology.org/D14-1162/) (Pennington et al., EMNLP 2014) — [Foundations](learning/foundations.md)
 
@@ -481,6 +486,11 @@
 
 - [A Bayesian Framework for Modeling Intuitive Dynamics](https://cocosci.princeton.edu/tom/papers/collisions.pdf) (2009) — [Probabilistic](learning/probabilistic.md)
 
+## 2006
+
+- [Reducing the Dimensionality of Data with Neural Networks](https://www.cs.toronto.edu/~hinton/absps/science.pdf) (Hinton & Salakhutdinov, 2006) — [Classics](learning/classics.md)
+- [A Fast Learning Algorithm for Deep Belief Nets](https://www.cs.toronto.edu/~hinton/absps/fastnc.pdf) (Hinton, Osindero & Teh, 2006) — [Classics](learning/classics.md)
+
 ## 2004
 
 - 🔒 [Trust in Automation: Designing for Appropriate Reliance](https://journals.sagepub.com/doi/10.1518/hfes.46.1.50_30392) (Lee & See, 2004) - *Paywalled* — [Human-AI Interaction](learning/human-ai-interaction.md)
@@ -499,16 +509,102 @@
 
 - 📄 [HIPAA Privacy Rule and AI](https://www.hhs.gov/hipaa/index.html) (US, 1996, ongoing interpretation) — [Policy & Governance](learning/policy.md)
 
+## 1994
+
+- [Learning Long-Term Dependencies with Gradient Descent is Difficult](https://www.comp.hkbu.edu.hk/~markus/teaching/comp7650/tnn-94-gradient.pdf) (Bengio, Simard & Frasconi, 1994) — [Classics](learning/classics.md)
+
+## 1991
+
+- [Untersuchungen zu dynamischen neuronalen Netzen](https://people.idsia.ch/~juergen/SeppHochreiter1991ThesisAdvisorSchmidhuber.pdf) (Hochreiter, 1991) — [Classics](learning/classics.md)
+
+## 1990
+
+- [Finding Structure in Time](https://gwern.net/doc/ai/nn/rnn/1990-elman.pdf) (Elman, 1990) — [Classics](learning/classics.md)
+
+## 1989
+
+- [Approximation by Superpositions of a Sigmoidal Function](https://web.njit.edu/~usman/courses/cs675_fall18/10.1.1.441.7873.pdf) (Cybenko, 1989) — [Classics](learning/classics.md)
+- [Backpropagation Applied to Handwritten Zip Code Recognition](http://yann.lecun.com/exdb/publis/pdf/lecun-89e.pdf) (LeCun et al., 1989) — [Classics](learning/classics.md)
+
+## 1986
+
+- [Learning Representations by Back-Propagating Errors](https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf) (Rumelhart, Hinton & Williams, 1986) — [Classics](learning/classics.md)
+
+## 1985
+
+- [A Learning Algorithm for Boltzmann Machines](https://www.cs.toronto.edu/~hinton/absps/cogscibm.pdf) (Ackley, Hinton & Sejnowski, 1985) — [Classics](learning/classics.md)
+
+## 1982
+
+- [Self-Organized Formation of Topologically Correct Feature Maps](https://www.cnbc.cmu.edu/~tai/nc19journalclubs/Kohonen1982_Article_Self-organizedFormationOfTopol.pdf) (Kohonen, 1982) — [Classics](learning/classics.md)
+- [Neural Networks and Physical Systems with Emergent Collective Computational Abilities](https://pmc.ncbi.nlm.nih.gov/articles/PMC346238/) (Hopfield, 1982) — [Classics](learning/classics.md)
+
+## 1980
+
+- [Neocognitron: A Self-Organizing Neural Network Model for a Mechanism of Pattern Recognition Unaffected by Shift in Position](https://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf) (Fukushima, 1980) — [Classics](learning/classics.md)
+
+## 1975
+
+- 🔒 [Cognitron: A Self-Organizing Multilayered Neural Network](https://link.springer.com/article/10.1007/BF00342633) (Fukushima, 1975) - *Paywalled* — [Classics](learning/classics.md)
+
+## 1974
+
+- [Beyond Regression: New Tools for Prediction and Analysis in the Behavioral Sciences](https://gwern.net/doc/ai/nn/1974-werbos.pdf) (Werbos, 1974) — [Classics](learning/classics.md)
+
 ## 1972
 
 ### 1972.11
 
-- [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972) — [Foundations](learning/foundations.md)
+- [Learning Patterns and Pattern Sequences by Self-Organizing Nets of Threshold Elements](https://people.idsia.ch/~juergen/amari1972hopfield.pdf) (Amari, 1972) — [Classics](learning/classics.md)
+
+## 1971
+
+- [Polynomial Theory of Complex Systems](https://www.gmdh.net/articles/history/polynomial.pdf) (Ivakhnenko, 1971) — [Classics](learning/classics.md)
+
+## 1970
+
+- [The Representation of the Cumulative Rounding Error of an Algorithm as a Taylor Expansion of the Local Rounding Errors](https://people.idsia.ch/~juergen/linnainmaa1970thesis.pdf) (Linnainmaa, 1970) — [Classics](learning/classics.md)
+
+## 1969
+
+- 🔒 [Perceptrons: An Introduction to Computational Geometry](https://archive.org/details/perceptronsintro0000mins) (Minsky & Papert, 1969) - *Paywalled* — [Classics](learning/classics.md)
+
+## 1967
+
+- [A Theory of Adaptive Pattern Classifiers](https://people.idsia.ch/~juergen/amari1967.pdf) (Amari, 1967) — [Classics](learning/classics.md)
+
+## 1962
+
+- [Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms](https://gwern.net/doc/ai/nn/1962-rosenblatt-principlesofneurodynamics.pdf) (Rosenblatt, 1962) — [Classics](learning/classics.md)
+
+## 1960
+
+- [Adaptive Switching Circuits](https://isl.stanford.edu/~widrow/papers/c1960adaptiveswitching.pdf) (Widrow & Hoff, 1960) — [Classics](learning/classics.md)
+
+## 1958
+
+- [The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain](https://www.ling.upenn.edu/courses/cogs501/Rosenblatt1958.pdf) (Rosenblatt, 1958) — [Classics](learning/classics.md)
+
+## 1949
+
+- [The Organization of Behavior](https://archive.org/details/in.ernet.dli.2015.97836) (Hebb, 1949) — [Classics](learning/classics.md)
+
+## 1948
+
+- [Intelligent Machinery](https://weightagnostic.github.io/papers/turing1948.pdf) (Turing, 1948) — [Classics](learning/classics.md)
+
+## 1943
+
+- [A Logical Calculus of the Ideas Immanent in Nervous Activity](https://www.cs.cmu.edu/~./epxing/Class/10715/reading/McCulloch.and.Pitts.pdf) (McCulloch & Pitts, 1943) — [Classics](learning/classics.md)
+
+## 1936
+
+- [On Computable Numbers, with an Application to the Entscheidungsproblem](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf) (Turing, 1936) — [Classics](learning/classics.md)
 
 ---
 
-**Total Papers in Learning Path**: 255 papers
-**Paywalled Papers**: 8 (marked with 🔒)
+**Total Papers in Learning Path**: 283 papers
+**Paywalled Papers**: 10 (marked with 🔒)
   - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
   - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)
   - 🔒 [Deep Learning (Nature Review)](https://www.nature.com/articles/nature14539)
@@ -517,6 +613,8 @@
   - 🔒 [The Extended Mind](https://academic.oup.com/analysis/article-abstract/58/1/7/153111)
   - 🔒 [Humans and Automation: Use, Misuse, Disuse, Abuse](https://journals.sagepub.com/doi/10.1518/001872097778543886)
   - 🔒 [Long Short-Term Memory (LSTM)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory)
-**Open Access**: ~97%
+  - 🔒 [Cognitron: A Self-Organizing Multilayered Neural Network](https://link.springer.com/article/10.1007/BF00342633)
+  - 🔒 [Perceptrons: An Introduction to Computational Geometry](https://archive.org/details/perceptronsintro0000mins)
+**Open Access**: ~96%
 
 [← Back to Main](README.md) | [→ View Learning Path](learning-path.md)

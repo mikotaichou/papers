@@ -59,10 +59,11 @@ The repo validates itself — all machinery lives in the repo, nothing external:
 
 ### Area Fit
 
-The 14 areas (names match each file's title):
+The 15 areas (names match each file's title):
 
 | Area file | Canonical name | Example papers |
 |-----------|----------------|----------------|
+| `learning/classics.md` | Classics: The Historical Roots of Neural Networks | McCulloch-Pitts, Perceptron, Hopfield 1982 |
 | `learning/foundations.md` | Foundations (Start Here) | LeNet, AlexNet, Word2Vec |
 | `learning/language-models.md` | Large Language Models | BERT, GPT-3, Transformers |
 | `learning/attention.md` | Attention Mechanisms & Context | FlashAttention, RetNet |
