@@ -49,6 +49,9 @@
 14. [Lattice Deduction Transformers](https://arxiv.org/abs/2605.08605) (Davis et al., 2026)
     - *Why*: **Recurrent transformer with sound deduction guarantees** - projects the latent state onto an abstract lattice between forward passes so each pass acts as a sound deduction step, trained on-policy in a constraint-solver-style loop with abstract-interpretation-based supervision; an 800K-parameter model reaches 100% accuracy on Sudoku-Extreme and Snowflake Sudoku and a 1.8M-parameter variant hits 99.9% on Maze-Hard, while frontier LLMs score 0% on all three, suggesting abstract interpretation can give small recurrent reasoners both correctness and competence.
 
+15. [Anomaly Detection in Dynamic Graphs via Transformer](https://arxiv.org/abs/2106.09876) (Liu et al., 2021)
+    - *Why*: **Transformers for evolving graph streams** - TADDY builds a node encoding that captures each node's structural and temporal roles in a dynamic graph, then learns coupled spatial-temporal patterns with a dynamic graph transformer; outperforms prior deep anomaly detectors by a large margin on six real-world datasets and shows how transformers extend to unattributed, time-evolving graph data
+
 ## Theoretical Foundations
 **Goal**: Understand the mathematical foundations
 

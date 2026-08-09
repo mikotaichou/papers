@@ -257,6 +257,9 @@
 ### 2021.09
 - [TruthfulQA: Measuring How Models Mimic Human Falsehoods](https://arxiv.org/abs/2109.07958) (Lin et al., 2022) — [Interpretability](learning/interpretability.md)
 
+### 2021.06
+- [Anomaly Detection in Dynamic Graphs via Transformer](https://arxiv.org/abs/2106.09876) (Liu et al., 2021) — [Architectures](learning/architectures.md)
+
 ### 2021.04
 - [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](https://arxiv.org/abs/2104.04473) (2021) — [Language Models](learning/language-models.md)
 
@@ -603,7 +606,7 @@
 
 ---
 
-**Total Papers in Learning Path**: 283 papers
+**Total Papers in Learning Path**: 284 papers
 **Paywalled Papers**: 10 (marked with 🔒)
   - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
   - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)
