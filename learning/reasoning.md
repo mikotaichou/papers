@@ -76,6 +76,9 @@
 10. [Learning to Orchestrate Agents in Natural Language with the Conductor](https://arxiv.org/abs/2512.04388) (Nielsen et al., 2025)
     - *Why*: **RL-learned LLM orchestration** - trains a 7B Conductor with end-to-end reinforcement learning to coordinate a pool of worker LLMs, jointly designing agent-to-agent communication topologies and prompt-engineering targeted instructions to each worker; reaches state-of-the-art on reasoning benchmarks like LiveCodeBench and GPQA, generalizes to arbitrary open- and closed-source agent pools via randomized-pool training, and can select itself as a worker to form recursive topologies for dynamic test-time scaling
 
+11. [AI agents can coordinate beyond human scale](https://arxiv.org/abs/2409.02822) (De Marzo et al., 2024)
+    - *Why*: **Coordination limits of AI agent societies** - applies complexity-science methods to show LLM groups coordinate via a majority force that weakens with group size, yielding a critical group size beyond which spontaneous consensus fails; this threshold grows exponentially with model capability and exceeds typical human informal group sizes for frontier LLMs
+
 ---
 
 **Related**: [Retrieval](retrieval.md) | [Architectures](architectures.md) | [Safety](safety.md)
