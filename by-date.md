@@ -131,6 +131,7 @@
 - [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) (2024) — [Interpretability](learning/interpretability.md)
 
 ### 2024.09
+- [AI agents can coordinate beyond human scale](https://arxiv.org/abs/2409.02822) (De Marzo et al., 2024) — [Reasoning & Agents](learning/reasoning.md)
 - [Accelerating Training With Neuron Interaction And Nowcasting Networks](https://arxiv.org/pdf/2409.04434) (2024) — [Architectures](learning/architectures.md)
 - [Mamba or RWKV: Exploring High-Quality and High-Efficiency Segment Anything Model](https://arxiv.org/pdf/2409.15254) (2024) — [Architectures](learning/architectures.md)
 - [EuroLLM: Multilingual Language Models for Europe](https://arxiv.org/pdf/2409.11741) (2024) — [Language Models](learning/language-models.md)
@@ -606,7 +607,7 @@
 
 ---
 
-**Total Papers in Learning Path**: 284 papers
+**Total Papers in Learning Path**: 285 papers
 **Paywalled Papers**: 10 (marked with 🔒)
   - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
   - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)
