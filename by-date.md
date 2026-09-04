@@ -106,6 +106,7 @@
 - [Large Language Models are Unreliable for Cyber Threat Intelligence](https://arxiv.org/abs/2503.23175) (2025) — [Safety & Security](learning/safety.md)
 
 ### 2025.02
+- [Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach](https://arxiv.org/abs/2502.05171) (Geiping et al., 2025) — [Reasoning](learning/reasoning.md)
 - [The Illusion of Thinking](https://ml-site.cdn-apple.com/papers/the-illusion-of-thinking.pdf) (2025) — [Interpretability](learning/interpretability.md)
 - [Forget What You Know about LLMs Evaluations -- LLMs are Like a Chameleon](https://arxiv.org/pdf/2502.07445) (2025) — [Interpretability](learning/interpretability.md)
 - [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](https://arxiv.org/abs/2502.11089) (2025) — [Attention](learning/attention.md)
@@ -607,7 +608,7 @@
 
 ---
 
-**Total Papers in Learning Path**: 285 papers
+**Total Papers in Learning Path**: 286 papers
 **Paywalled Papers**: 10 (marked with 🔒)
   - 🔒 [High-dimensional on-chip dataflow sensing and routing using spatial photonic networks](https://www.nature.com/articles/s41566-023-01272-3.pdf)
   - 🔒 [Cognitive Offloading](https://www.cell.com/trends/cognitive-sciences/abstract/S1364-6613(16)30098-5)
@@ -619,6 +620,6 @@
   - 🔒 [Long Short-Term Memory (LSTM)](https://www.researchgate.net/publication/13853244_Long_Short-term_Memory)
   - 🔒 [Cognitron: A Self-Organizing Multilayered Neural Network](https://link.springer.com/article/10.1007/BF00342633)
   - 🔒 [Perceptrons: An Introduction to Computational Geometry](https://archive.org/details/perceptronsintro0000mins)
-**Open Access**: ~96%
+**Open Access**: ~97%
 
 [← Back to Main](README.md) | [→ View Learning Path](learning-path.md)

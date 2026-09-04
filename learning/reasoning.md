@@ -43,6 +43,9 @@
 12. [NL2LOGIC: AST-Guided Translation of Natural Language into First-Order Logic with Large Language Models](https://arxiv.org/abs/2602.13237) (Putra et al., 2026)
     - *Why*: **Neuro-symbolic NL-to-logic translation** - inserts an abstract syntax tree as an intermediate representation between a recursive LLM semantic parser and a grammar-constrained generator, deterministically producing solver-ready first-order logic so inference can be delegated to automated solvers; reaches 99% syntactic accuracy and up to 30% higher semantic correctness than prior LLM logic-parsing methods on FOLIO, LogicNLI, and ProofWriter, and lifts downstream reasoning accuracy by 31% when integrated into Logic-LM.
 
+13. [Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach](https://arxiv.org/abs/2502.05171) (Geiping et al., 2025)
+    - *Why*: **Test-time depth instead of test-time tokens** - iterates a recurrent block to unroll a model to arbitrary depth at inference, so reasoning happens in latent space rather than as emitted chain-of-thought; needs no specialized reasoning data and works with small context windows, and a 3.5B proof-of-concept trained on 800B tokens reaches benchmark performance equivalent to a ~50B-parameter compute load.
+
 ## Agentic Systems
 **Goal**: Create autonomous AI agents
 
